@@ -1445,6 +1445,12 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = kurdish
+				split_religion = {
+					kurdish = {
+						sunni = 0.8
+						shiite = 0.2
+					}
+				}
 				size = 301906
 			}
 			create_pop = {
@@ -1459,6 +1465,12 @@
 			}
 			create_pop = {
 				culture = turkish
+				split_religion = {
+					turkish = {
+						sunni = 0.5
+						shiite = 0.5
+					}
+				}
 				size = 76381
 			}
 			create_pop = {
@@ -1583,6 +1595,12 @@
 		region_state:EGY = {
 			create_pop = {
 				culture = turkish
+				split_religion = {
+					turkish = {
+						sunni = 0.5
+						shiite = 0.5
+					}
+				}
 				size = 270062
 			}
 			create_pop = {
@@ -1723,10 +1741,22 @@
 			}
 			create_pop = {
 				culture = kurdish
+				split_religion = {
+					kurdish = {
+						sunni = 0.8
+						shiite = 0.2
+					}
+				}
 				size = 142520
 			}
 			create_pop = {
 				culture = turkish
+				split_religion = {
+					turkish = {
+						sunni = 0.5
+						shiite = 0.5
+					}
+				}
 				size = 297860
 			}
 		}
@@ -1803,6 +1833,12 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
+				split_religion = {
+					turkish = {
+						sunni = 0.5
+						shiite = 0.5
+					}
+				}
 				size = 61000
 			}
 			create_pop = {
@@ -1879,6 +1915,12 @@
 			}
 			create_pop = {
 				culture = turkish
+				split_religion = {
+					turkish = {
+						sunni = 0.5
+						shiite = 0.5
+					}
+				}	
 				size = 538728
 			}
 		}
