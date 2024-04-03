@@ -165,6 +165,20 @@ ideology_atheist = {
 		law_state_atheism = strongly_approve
 	}
 	
+	lawgroup_health_system = {
+		law_no_health_system = disapprove
+		law_charitable_health_system = disapprove
+		law_private_health_insurance = neutral
+		law_public_health_insurance = neutral
+	}
+	
+	lawgroup_education_system = {
+		law_no_schools = disapprove
+		law_religious_schools = disapprove
+		law_private_schools = neutral
+		law_public_schools = neutral
+	}
+	
 	possible = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
@@ -175,7 +189,10 @@ ideology_atheist = {
 					has_law = law_type:law_parliamentary_republic
 					has_law = law_type:law_council_republic
 				}
-				has_law = law_type:law_state_atheism
+				OR = {
+					has_law = law_type:law_state_atheism
+					has_law = law_type:law_total_separation
+				}
 			}
 		}
 		# Monarchs cannot be republicans
@@ -211,7 +228,7 @@ ideology_atheist = {
 	}
 	
 	leader_weight = {
-		value = 100
+		value = 25
 		# this is not very relevant if you're a republic with religious freedom
 		if = { 
 			limit = {
@@ -235,8 +252,16 @@ ideology_atheist = {
 					}
 				}
 			}
-			add = 75
+			add = 125
 		}
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_state_religion
+				}
+			}
+			add = 50 
+		}		
 		if = {
 			limit = { 
 				scope:interest_group = { 
@@ -541,28 +566,7 @@ ideology_radical = {
 				limit = {
 					owner = {
 						has_global_variable = peoples_springtime_happening
-						OR = {
-							capital.region = sr:region_england
-							capital.region = sr:region_north_sea_coast
-							capital.region = sr:region_gaelic
-							capital.region = sr:region_iberia
-							capital.region = sr:region_france
-							capital.region = sr:region_occitania
-							capital.region = sr:region_rhine
-							capital.region = sr:region_low_countries
-							capital.region = sr:region_north_italy
-							capital.region = sr:region_south_italy
-							capital.region = sr:region_west_balkans
-							capital.region = sr:region_east_balkans
-							capital.region = sr:region_greece
-							capital.region = sr:region_north_germany
-							capital.region = sr:region_south_germany
-							capital.region = sr:region_baltic
-							capital.region = sr:region_scandinavia
-							capital.region = sr:region_poland
-							capital.region = sr:region_ukraine
-							capital.region = sr:region_belarus
-						}
+						country_is_in_europe = yes
 					}
 				}
 				multiply = {
@@ -4029,6 +4033,27 @@ ideology_liberal_leader = {
 				}
 			}
 			add = -75
+		}
+		# less likely for Landowners and Devout
+		if = {
+			limit = {
+				scope:interest_group = {
+					OR = {
+						is_interest_group_type = ig_devout
+						is_interest_group_type = ig_landowners
+					}
+				}
+			}
+			add = -50
+		}
+		# less likely for Armed Forces
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			add = -25
 		}
 		# More common in republics
 		if = {

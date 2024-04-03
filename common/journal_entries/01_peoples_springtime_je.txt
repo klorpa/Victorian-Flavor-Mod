@@ -2,10 +2,10 @@
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
 	group = je_group_crises
-	
+
 	is_shown_when_inactive = {
-		has_global_variable = peoples_springtime_happening
 		has_technology_researched = egalitarianism
+		year <= 1865
 		country_is_in_europe = yes
 	}
 
@@ -20,10 +20,25 @@
 	}
 
 	immediate = {
-		set_global_variable = {
-			name = completed_1848_buildup
-		}
 		trigger_event = { id = 1848.4 }
+		hidden_effect = {
+			if = {
+				limit = {
+					is_revolutionary = no
+					}
+				save_scope_as = originator
+				every_country = {
+					limit = {
+						OR = {
+							country_is_in_europe = yes
+							has_interest_marker_in_region = scope:originator.capital.region
+						}
+						NOT = { this = root }
+					}
+					post_notification = springtime_of_the_people_je_opened
+				}
+			}
+		}
 	}
 
 	complete = {
@@ -125,4 +140,25 @@
 	can_revolution_inherit = no
 
 	timeout = 3650
+
+	on_timeout = {
+		hidden_effect = {
+			if = {
+				limit = {
+					is_revolutionary = no
+					}
+				save_scope_as = originator
+				every_country = {
+					limit = {
+						OR = {
+							country_is_in_europe = yes
+							has_interest_marker_in_region = scope:originator.capital.region
+						}
+						NOT = { this = root }
+					}
+					post_notification = springtime_of_the_people_je_over
+				}
+			}
+		}
+	}
 }

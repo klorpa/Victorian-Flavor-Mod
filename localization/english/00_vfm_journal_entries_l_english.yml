@@ -130,9 +130,6 @@
   je_gwangmu_democracy: "Gwangmu: Institute Democracy"
   je_gwangmu_democracy_reason: "Western Powers hold a form of government where the people have a hand in deciding how they are ruled. The superiority of their way of government manifests in their control of the globe. Should we wish to stay out of [concept_revolution] and foreign influence, we should attempt better forms of government."
 
-  je_1848_buildup: "Springtime of Nations"
-  je_1848_buildup_reason: "Dangerous ideas and political dissatisfaction have brought Europe to a tipping point. There are rumors of democratic and liberal revolutionaries organizing, who aim to remove old monarchical structures and create independent nation-states, as envisioned by romantic nationalism."
-
   je_canton_system: "The Canton System"
   je_canton_system_reason: "The Canton System is a system of trade regulations imposed by the Qing dynasty. Under this system, all foreign trade is restricted to the city of Canton, in southern China. \n\n Foreign merchants, mostly from European countries, are not allowed to travel or trade freely within China and were required to conduct their business through a group of Chinese intermediaries known as the "hong merchants"."
 
@@ -191,9 +188,6 @@
 
   je_paulett_affair: "Paulet Affair"
   je_paulett_affair_reason: ""
-
-  je_1848: "1848"
-  je_1848_reason: ""  
   
   je_berlin_conference: "The [SCOPE.sCountry('berlin_conference_host').GetCapital.GetCityHubName] Conference"
   je_berlin_conference_reason: "[SCOPE.sCountry('berlin_conference_host').GetNameNoFlag] has invited many of the leading Powers of Europe to settle the many disputes over the African Continent in [SCOPE.sCountry('berlin_conference_host').GetCapital.GetCityHubName]."
@@ -341,3 +335,11 @@
   
   je_monroe_doctrine: "The Monroe Doctrine"
   je_monroe_doctrine_reason: "#bold The Monroe Doctrine#! was first espoused by #bold President James Monroe#! in late 1823. It outlined distinct and separate spheres of influence between the #bold Old World#! and #bold New World#!, notably:\n\n(1) The United States would not interfere in conflicts between European powers in the #bold Old World#!.\n\n(2) Existing European colonies in the #bold New World#! would be recognized.\n\n(3) The #bold New World#! was no longer open to the establishment of new colonies.\n\n(4) Any attempt to exert control over independent countries in the #bold New World#! by Europeans would be seen as a hostile act against the United States.\n\nWhile this journal entry is active, the United States will receive prompts to intervene in conflicts involving Europeans in the #bold New World#!. Successful intervention or mediation, increasing our [concept_power_projection], and a number of other factors will influence the success of the doctrine, solidifying its place in American foreign policy." #\n\nAt the present, the following European [Concept('concept_great_power', '$concept_great_powers$')] recognize the doctrine:\n[GetGlobalList('monroe_doctrine_recognizers')]
+  
+  notification_springtime_of_the_people_je_opened_name: "Springtime of the Peoples in [SCOPE.sC('originator').GetName]"
+  notification_springtime_of_the_people_je_opened_desc: "Liberal agitators in [SCOPE.sC('originator').GetName] are demanding more freedoms. Unless stamped out or compromised with, this may lead to a revolution."
+  
+  notification_springtime_of_the_people_je_over_name: "Springtime of the Peoples in [SCOPE.sC('originator').GetName]"
+  notification_springtime_of_the_people_je_over_desc: "The prolonged period of unrest in [SCOPE.sC('originator').GetName] is over."
+  notification_springtime_of_the_people_je_closed_tooltip: "Whether the liberal forces in [SCOPE.sC('originator').GetName] were victorious or have been vanquished, the Journal Entry "Springtime of the Peoples" is now closed."
+  notification_springtime_of_the_people_je_opened_tooltip: "This political Springtime in [SCOPE.sC('originator').GetName] may inspire citizens of other countries to create unrest in the pursuit of liberty."
