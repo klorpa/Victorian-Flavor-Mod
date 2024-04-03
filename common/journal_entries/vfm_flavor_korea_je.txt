@@ -189,9 +189,13 @@ je_silhak_return = {
 
 	on_monthly_pulse = { 
 		effect = {
+			set_variable = {
+				name = kor_silhak_delta_var
+				value = kor_silhak_delta
+			}
 			change_variable = {
 				name = silhak_var
-				add = kor_silhak_delta
+				add = var:kor_silhak_delta_var
 			}
 			trigger_event = {
 				id = seohak.4
@@ -240,9 +244,13 @@ je_silhak_reform = {
 	}
 	on_monthly_pulse = { 
 		effect = {
+		    set_variable = {
+				name = kor_silhak_delta_var
+				value = kor_silhak_delta
+			}
 			change_variable = {
 				name = silhak_var
-				add = kor_silhak_delta
+				add = var:kor_silhak_delta_var
 			}
 			trigger_event = {
 				id = seohak.4

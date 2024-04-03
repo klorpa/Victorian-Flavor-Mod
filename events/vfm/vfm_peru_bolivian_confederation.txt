@@ -416,7 +416,6 @@ peru_bolivia_confederation.3 = { #Division of Peru
 		trigger_event = {
 			id = peru_bolivia_confederation.6
 			months = 7
-			}
 		}
 	}
 }
@@ -724,11 +723,9 @@ peru_bolivia_confederation.7 = { #Tacna Pact
 	}
 }
 
-peru_bolivia_confederation.8 = { #Consolidation 
-
+#peru_bolivia_confederation.8 = { #Consolidation 
 	#Replaced by peru_bolivia_events.1
-
-}
+#}
 
 peru_bolivia_confederation.9 = { #Elections
 	type = country_event

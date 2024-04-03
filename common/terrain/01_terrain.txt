@@ -210,7 +210,7 @@ hills = {
 				if = {
 					limit = {
 						scope:region = {
-							is_asian_farmland = yes
+							is_asian_jungle = yes
 						}
 					}
 					add = 1
@@ -240,8 +240,24 @@ hills = {
 				if = {
 					limit = {
 						scope:region = {
+							is_asian_farmland = yes
+							is_asian_jungle = no
+						}
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/farmland_asian.dds"
+			effect = "vfx_entity_ui_state_farmland_asian"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:region = {
 							AND = {
-								is_asian_farmland = no
+							    is_asian_farmland = no
 								is_subtropic_farmland = no
 							}
 						}

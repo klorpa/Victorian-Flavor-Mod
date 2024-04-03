@@ -78,7 +78,7 @@ baltic_subjects = {
 }
 
 ottoman_subjects = {
-	default = yes_ottoman_subjects
+	default = no_ottoman_subjects
 	
 	yes_ottoman_subjects = {
 	}

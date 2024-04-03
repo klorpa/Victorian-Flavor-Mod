@@ -1142,6 +1142,9 @@ kor.14 = { #korea pleads their sovereignty
         save_scope_as = western_liberator_scope
         c:KOR = { save_scope_as = kor_scope }
         c:KOR.overlord = { save_scope_as = chi_scope }
+		set_variable = {
+			name = korean_western_liberator
+		}
     }
 
     duration = 3
@@ -1151,12 +1154,14 @@ kor.14 = { #korea pleads their sovereignty
         trigger_event = {
             id = kor.15
         }
+		ai_chance = { base = 8 }
     }
-    option = { #liberate korea for an obligation
+    option = { #liberate korea for an obligation (treaty port)
         name = kor.14.b
         trigger_event = {
             id = kor.16
         }
+		ai_chance = { base = 2 }
     }
     option = { #refuse the delegation
         name = kor.14.c
@@ -1167,6 +1172,7 @@ kor.14 = { #korea pleads their sovereignty
         scope:kor_scope = {
             post_notification = kor_gp_refused_liberation
         }
+		ai_chance = { base = 1 }
     }
 }
 
@@ -1188,6 +1194,13 @@ kor.15 = { #liberate korea for free trade
     icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
     duration = 3
+	
+	immediate = {
+	    random_country = {
+			limit = { has_variable = korean_western_liberator }
+			save_scope_as = western_liberator_scope
+		}
+	}
 
     option = { #agree
         name = kor.15.a
@@ -1196,17 +1209,19 @@ kor.15 = { #liberate korea for free trade
             type = dp_independence
             add_initiator_backers = { scope:western_liberator_scope }
         }
-        if = {
+        if = { # do this in on_war_end action instead
             limit = { has_law = law_type:law_isolationism }
             activate_law = law_type:law_free_trade
         }
         create_diplomatic_pact = {
-            target_country = scope:western_liberator_scope
+            country = scope:western_liberator_scope
             type = trade_agreement
         }
+		ai_chance = { base = 10 }
     }
     option = { #refuse
         name = kor.15.b
+		ai_chance = { base = 1 }
     }
 }
 
@@ -1240,10 +1255,12 @@ kor.16 = { #liberate korea for an obligation
             country = scope:western_liberator_scope
             setting = yes
         }
+		ai_chance = { base = 20 }
     }
 
     option = { #refuse
         name = kor.16.b
+		ai_chance = { base = 1 }
     }
 }
 
