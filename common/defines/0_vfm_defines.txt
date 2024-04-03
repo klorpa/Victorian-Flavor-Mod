@@ -182,31 +182,31 @@ NPops = {
     CONVERSION_RATE = 0.001						# Percentage of pops who will Convert into a different Religion each month, if eligible (halved from vanilla)
 	RADICALS_MONTHLY_FROM_DISCRIMINATION = 0.006 #0.005 # Scales by literacy
 	
-	CULTURAL_MIGRATION_BASE = 0.08								# Base amount of a pop that wants to move due to mass migration
-	CULTURAL_MIGRATION_FROM_RADICALS = 0.1						# At 100% radicals, this fraction of the pop wants to mass migrate
-	MIGRATION_UNEMPLOYMENT_MULT = 10.0							# Amount of migration from SoL is increased by this when a pop is unemployed
-	MIGRATION_MAX_POP_AMOUNT = 5000								# No more than this amount of a pop can migrate each week
-	MIGRATION_MAX_PER_STATE_BASE = 500							# No more than this amount of people can move from or to a state in a single week (base)	
-	MIGRATION_MAX_PER_STATE_INFRASTRUCTURE = 5					# No more than this amount of people can move from or to a state in a single week (scales with infrastructure)
 	
 	MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION = 0.001		#0.005 Max emigration per week is clamped to this fraction of a state's population
-	MIGRATION_MAX_PER_STATE_CULTURAL_EMIGRATION_MULT = 2.5		#10 Weekly emigration caps are multiplied by this amount by this for cultural-type migration (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
-	MIGRATION_MAX_PER_STATE_CULTURAL_IMMIGRATION_MULT = 20.0		#30 Weekly immigration caps are multiplied by this amount by this for cultural-type migration (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
 	
-	MIGRATION_MAX_PER_STATE_UNEMPLOYMENT_ORIGIN_FRACTION = 0.01	# The amount of unemployed workers in a state * this value is added to how many people can move from it (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
-	MIGRATION_MAX_PER_STATE_UNEMPLOYMENT_TARGET_FRACTION = 0.005	# The amount of unemployed workers in a state * this value is removed from how many people can move to it (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
-	MIGRATION_MAX_PER_STATE_CULTURAL_EMIGRATION_MULT = 5.0		# Weekly emigration caps are multiplied by this amount by this for cultural-type migration (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
-	MIGRATION_MAX_PER_STATE_CULTURAL_IMMIGRATION_MULT = 15.0		# Weekly immigration caps are multiplied by this amount by this for cultural-type migration (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
+	MIGRATION_MAX_PER_STATE_UNEMPLOYMENT_ORIGIN_FRACTION = 0.007	#0.05 The amount of unemployed workers in a state * this value is added to how many people can move from it (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
+	MIGRATION_MAX_PER_STATE_UNEMPLOYMENT_TARGET_FRACTION = 0.005	#0.05 The amount of unemployed workers in a state * this value is removed from how many people can move to it (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
 	
 	
+	## Market Migrations ##
+	MARKET_MIGRATION_PER_WEEK_FACTOR = 4										#5 This number of individuals will migrate for each point of difference in migration pull
+	MARKET_MIGRATION_PER_WEEK_PER_TOTAL_POPULATION = 125000						#100 000 Additionally, one more individual will migrate per this number of population for each point of difference in migration pull
+	MARKET_MIGRATION_MIN_DIFFERENCE_IN_MIGRATION_ATTRACTION_TO_MOVE = 5			# Pops will not migrate if their best option is to a state with a lower delta in migration pull than this number
 	
+	
+	## Mass Migrations ##
+	# Mass Migration Setup #
 	MASS_MIGRATION_SPAWN_CHANCE = 0.75 					# Per week for each potential mass migration, scales with turmoil (1 = 1%)
 	MASS_MIGRATION_SPAWN_CHANCE_STRUGGLING_FACTOR = 0.2 # Chance increases by this for each point of SoL below 10 for a culture in a country
 	MASS_MIGRATION_SPAWN_CHANCE_STARVING_FACTOR = 0.8 	# Chance increases by this for each point of SoL below 5 for a culture in a country 
-	MASS_MIGRATION_DURATION_MONTHS = 48					# How long does a mass migration last in months
+	MASS_MIGRATION_DURATION_MONTHS = 36					# How long does a mass migration last in months
 	MASS_MIGRATION_COOLDOWN_MONTHS = 24					# How many months before the same culture can mass migrate from a country again
-	MASS_MIGRATION_ORIGIN_MIN_TURMOIL = 0.20			# Must have at least this much turmoil in cultural homelands to create a migration target
 	MASS_MIGRATION_TARGET_MAX_TURMOIL = 0.15			# Must have this or less turmoil among the culture for a country to be picked as a mass migration target
+	
+	# Mass Migration Processing #
+	MIGRATION_MAX_PER_STATE_MASS_EMIGRATION_MULT = 2.5		# Weekly emigration caps are multiplied by this amount by this for mass migrations (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
+	MIGRATION_MAX_PER_STATE_MASS_IMMIGRATION_MULT = 5.0		# Weekly immigration caps are multiplied by this amount by this for mass migrations (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
 	
 	INDIVIDUALS_TAXED_PER_TAX_CAPACITY = 15000			# How many pops can be taxed efficiently for each tax capacity
 }
