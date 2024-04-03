@@ -787,11 +787,11 @@
 		region_state:DEN = {
 			create_pop = {
 				culture = akan
-				size = 116308
+				size = 906308
 			}
 			create_pop = {
 				culture = ewe
-				size = 115996
+				size = 105996
 			}
 			create_pop = {
 				culture = mossi
@@ -801,7 +801,7 @@
 		region_state:GBR = {
 			create_pop = {
 				culture = akan
-				size = 40204
+				size = 50204
 			}
 			create_pop = {
 				culture = mossi
@@ -825,7 +825,7 @@
 		region_state:ASH = {
 			create_pop = {
 				culture = akan
-				size = 436308
+				size = 446308
 			}
 			create_pop = {
 				culture = mossi
@@ -833,7 +833,7 @@
 			}
 			create_pop = {
 				culture = ewe
-				size = 88996
+				size = 98996
 			}
 			create_pop = {
 				pop_type = slaves
