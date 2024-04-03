@@ -110,10 +110,10 @@ NPolitics = {
 	POP_IG_RANDOM_FACTOR = 0.3
 	MAX_POP_FRACTION_LEAVE_IG = 0.1
 	
-	SECESSION_WEEKLY_CHANCE_EXCESS_DIV = 10			# Excess turmoil is divided by this and used to increase chance for secession movements
-	MIN_POP_SIZE_TO_SECEDE = 50000						# Num pops (including dependents) needed for a secession movement to start
-	SECESSION_STATE_CUTOFF_PERCENT = 0.33				# Required pop percentage in State to be egligble (oi) for secession
-	SECESSION_COOLDOWN_YEARS = 5
+	SECESSION_TURMOIL_CUTOFF = 0.35						# 0.5 Turmoil requires for cultures to start secession
+	SECESSION_WEEKLY_CHANCE_EXCESS_DIV = 40			    # 100 Excess turmoil is divided by this and used to increase chance for secession movements
+	MIN_POP_SIZE_TO_SECEDE = 40000						# Num pops (including dependents) needed for a secession movement to start
+    SECESSION_STATE_CUTOFF_PERCENT = 0.3				# Required pop percentage in State to be egligble for secession
 }
 
 NEconomy = {

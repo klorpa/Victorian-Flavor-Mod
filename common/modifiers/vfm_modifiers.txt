@@ -404,3 +404,13 @@ union_of_south_africa_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	country_authority_mult = 0.15
 }
+
+nationalist_fervor = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_radicals_from_sol_change_mult = -0.25
+	building_mobilization_cost_mult = -0.25
+	military_formation_organization_gain_mult = 0.25
+	country_legitimacy_base_add = 25
+	battle_offense_owned_province_mult = 0.25
+	battle_defense_owned_province_mult = 0.25
+}
