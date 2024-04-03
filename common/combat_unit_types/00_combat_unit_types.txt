@@ -441,6 +441,7 @@ combat_unit_type_cannon_artillery = {
         combat_unit_type_mobile_artillery
         combat_unit_type_shrapnel_artillery
         combat_unit_type_siege_artillery
+        combat_unit_type_heavy_tank
     }
 }
 
@@ -502,6 +503,7 @@ combat_unit_type_mobile_artillery = {
     upgrades = {
         combat_unit_type_shrapnel_artillery
         combat_unit_type_siege_artillery
+        combat_unit_type_heavy_tank
     }
 }
 
@@ -569,6 +571,7 @@ combat_unit_type_shrapnel_artillery = {
 
     upgrades = {
         combat_unit_type_siege_artillery
+        combat_unit_type_heavy_tank
     }
 }
 
@@ -633,6 +636,9 @@ combat_unit_type_siege_artillery = {
     combat_unit_image = {
         # fallback
         texture = "gfx/unit_illustrations/artillery_eu_siege.dds"
+    }
+    upgrades = {
+        combat_unit_type_heavy_tank
     }
 }
 
@@ -733,6 +739,7 @@ combat_unit_type_hussars = {
         combat_unit_type_dragoons
         combat_unit_type_cuirassiers
         combat_unit_type_lancers
+        combat_unit_type_light_tanks
     }
 }
 
@@ -758,7 +765,7 @@ combat_unit_type_dragoons = {
         #should get modifiers to mobile/surprise battle conditions appearing
     }
 
-	unlocking_technologies = { standing_army }
+	unlocking_technologies = { military_drill }
 
     combat_unit_image = {
         trigger = { 
@@ -796,6 +803,7 @@ combat_unit_type_dragoons = {
     upgrades = {
         combat_unit_type_cuirassiers
         combat_unit_type_lancers
+        combat_unit_type_light_tanks
     }
 }
 
@@ -821,7 +829,7 @@ combat_unit_type_cuirassiers = {
         unit_occupation_mult = 0.3
     }
 
-	unlocking_technologies = { standing_army }
+	unlocking_technologies = { military_drill }
 
     combat_unit_image = {
         trigger = { 
@@ -859,6 +867,7 @@ combat_unit_type_cuirassiers = {
     upgrades = {
         combat_unit_type_dragoons
         combat_unit_type_lancers
+        combat_unit_type_light_tanks
     }
 }
 
@@ -886,7 +895,7 @@ combat_unit_type_lancers = {
         unit_occupation_mult = 0.3
     }
 
-	unlocking_technologies = { standing_army }
+	unlocking_technologies = { napoleonic_warfare }
     
     combat_unit_image = {
         trigger = { 
@@ -924,6 +933,7 @@ combat_unit_type_lancers = {
     upgrades = {
         combat_unit_type_dragoons
         combat_unit_type_cuirassiers
+        combat_unit_type_light_tanks
     }
 }
 
@@ -1018,6 +1028,12 @@ combat_unit_type_monitor = {
     combat_unit_image = {
         texture = "gfx/unit_illustrations/capital_ships_monitor.dds"
     }
+
+    upgrades = {
+		combat_unit_type_destroyer
+        combat_unit_type_scout_cruiser
+        combat_unit_type_torpedo_boat
+	}
 }
 
 combat_unit_type_destroyer = {
@@ -1077,6 +1093,8 @@ combat_unit_type_torpedo_boat = {
 	
 	upgrades = {
 		combat_unit_type_destroyer
+        combat_unit_type_scout_cruiser
+        combat_unit_type_torpedo_boat
 	}
 }
 
@@ -1121,6 +1139,7 @@ combat_unit_type_man_o_war = {
         unit_offense_add = 25
         unit_defense_add = 25
         unit_morale_loss_add = 10
+        unit_convoy_raiding_mult = -0.3
     }
 
 	unlocking_technologies = { drydocks }
@@ -1131,6 +1150,8 @@ combat_unit_type_man_o_war = {
 	
 	upgrades = {
 		combat_unit_type_ironclad
+        combat_unit_type_dreadnought
+        combat_unit_type_battleship
 	}
 }
 
@@ -1158,6 +1179,11 @@ combat_unit_type_ironclad = {
     combat_unit_image = {
         texture = "gfx/unit_illustrations/capital_ships_ironclad.dds"
     }
+
+    upgrades = {
+		combat_unit_type_dreadnought
+        combat_unit_type_battleship
+	}
 }
 
 combat_unit_type_dreadnought = {
@@ -1185,6 +1211,10 @@ combat_unit_type_dreadnought = {
     combat_unit_image = {
         texture = "gfx/unit_illustrations/capital_ships_dreadnought.dds"
     }
+
+    upgrades = {
+		combat_unit_type_battleship
+	}
 }
 
 combat_unit_type_battleship = {
