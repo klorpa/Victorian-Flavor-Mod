@@ -41,6 +41,21 @@ vfm_ai.1 = {
 		}
 		if = {
 			limit = {
+			    c:DEN = {
+					exists = yes
+					is_ai = yes
+				}
+			}
+			c:DEN = {
+				s:STATE_ZEALAND = {
+					random_scope_state = {
+						start_building_construction = building_furniture_manufacturies
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
 			    c:PRU = {
 					exists = yes
 					is_ai = yes
@@ -106,7 +121,7 @@ vfm_ai.2 = {
 
 	trigger = {
 	    c:PRU ?= this
-		is_ai = yes
+		#is_ai = yes
 		game_date > 1837.7.1
 		game_date < 1838.12.1
 	}
@@ -132,6 +147,27 @@ vfm_ai.2 = {
 					}
 				}
 			}
+		}
+		if = {
+			limit = {
+			    c:DEN ?= {
+					is_ai = yes
+				}
+			}
+			if = {
+			limit = {
+				any_scope_state = { # danes are obsessed with luxury furniture
+						can_activate_production_method = {
+							building_type = building_furniture_manufacturies
+							production_method = pm_luxury_furniture
+					    }	
+					}
+			}
+			activate_production_method = {
+				building_type = building_furniture_manufacturies
+				production_method = pm_luxury_furniture
+		    }
+		}
 		}
 	}
 }

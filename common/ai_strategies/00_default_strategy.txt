@@ -160,6 +160,21 @@ ai_strategy_default = {
 			}
 			add = 100
 		}
+		if = {
+			limit = {
+				AND = {
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+					}
+					any_diplomatic_play = {
+						is_diplomatic_play_type = dp_annex_subject
+						target_is = c:SCH					
+					}	
+				}
+			}
+			add = -20
+		}
 		# unite against non-muslim invaders
 		if = {
 			limit = {
@@ -196,8 +211,7 @@ ai_strategy_default = {
 
 		if = { # Isolationist Japan should tend to back down against market opening plays
 			limit = {
-				exists = c:JAP
-				THIS = c:JAP
+				c:JAP ?= this
 				has_law = law_type:law_isolationism 
 				NOT = { has_variable = japan_forced_to_open_market }
 				scope:diplomatic_play = { 
@@ -327,7 +341,7 @@ ai_strategy_default = {
 					}
 				}
 			}
-			add = 0.25
+			add = 0.18
 		}
 
 		# USA should Manifest a lot of Destiny
@@ -349,7 +363,7 @@ ai_strategy_default = {
                     }
                 }
             }
-            add = 0.7
+            add = 0.5
         }
 		
 		# France should very aggressively go for Algeria.
@@ -795,6 +809,22 @@ ai_strategy_default = {
 						scope:target_state = { is_homeland_of_country_cultures = root }
 					}
 					multiply = 1.5
+				}			
+                if = {
+					limit = {
+						scope:target_state = { is_homeland_of_country_cultures = root }
+						any_interest_group = {
+							is_in_government = yes
+							is_strongest_ig_in_government = yes
+							leader = {
+								OR = {
+									has_ideology = ideology:ideology_fascist
+									has_ideology = ideology:ideology_ethno_nationalist
+								}
+							}
+						}
+					}
+					multiply = 4
 				}				
 			}
 		
@@ -858,6 +888,7 @@ ai_strategy_default = {
 							state_region = s:STATE_BALUCHISTAN
 							state_region = s:STATE_HIMALAYAS
 						}
+						is_treaty_port = no
 					}
 				}
 				add = 50
@@ -1045,7 +1076,9 @@ ai_strategy_default = {
 				limit = { 
 					wants_to_solve_schleswig_holstein = yes
 					scope:target_country = {
-						is_oppressor_of_schleswig_holstein = yes
+						overlord = {
+							is_oppressor_of_schleswig_holstein = yes
+						}
 					}
 				}
 				
@@ -1255,6 +1288,18 @@ ai_strategy_default = {
 				scope:target_state = {
 					NOT = { state_region = s:STATE_FORMOSA }
 				}					
+			}
+			add = 100
+		}
+		
+		if = {
+			limit = {
+				exists = c:JAP
+				scope:target_country = {
+				    this = c:JAP
+					has_law = law_type:law_isolationism
+				}
+				game_date > 1858.1.1					
 			}
 			add = 100
 		}
@@ -3381,13 +3426,16 @@ ai_strategy_default = {
 			stance = wants_high_supply
 			trigger = {
 				has_technology_researched = artillery
-				total_population >= 1000000
+				total_population > 2000000
+				gdp > 3000000
 			}
 		}
 		ammunition = {
 			stance = wants_high_supply
 			trigger = {
 				has_technology_researched = general_staff
+				total_population > 2000000
+				gdp > 3000000
 			}
 		}
 		aeroplanes = {
@@ -3551,6 +3599,17 @@ ai_strategy_default = {
 			}
 		}
 		region_japan = {	
+		    if = {
+				limit = {
+					exists = c:JAP
+					game_date > 1858.1.1
+					c:JAP = { has_law = law_type:law_isolationism }
+					has_technology_researched = nationalism	
+					country_rank = rank_value:great_power
+					navy_size >= 60
+				}
+				add = 1000
+			}
 			if = {
 				limit = {
 					exists = c:JAP
@@ -3771,10 +3830,11 @@ ai_strategy_default = {
 		region_indonesia= {
 	        if = {
 				limit = {
+                    exists = c:SPA
 					this = c:SPA
 					country_rank >= rank_value:great_power
 				}
-				add = 50
+				add = 75
 			}
 		}
 		region_oceania = {
@@ -3841,6 +3901,17 @@ ai_strategy_default = {
 			}
 		}	
 		region_manchuria = {
+		    if = {
+				limit = {
+					exists = c:KOR
+					game_date > 1867.1.1
+					c:KOR = { has_law = law_type:law_isolationism }
+					has_technology_researched = nationalism	
+					country_rank = rank_value:great_power
+					navy_size >= 60
+				}
+				add = 250
+			}
 			if = {
 				limit = {
 					country_is_in_europe = yes
@@ -3862,6 +3933,17 @@ ai_strategy_default = {
 					has_journal_entry = je_opium_wars	
 				}
 				add = 1000
+			}		
+            if = {
+				limit = {
+					exists = c:CHI
+					game_date > 1870.1.1
+					c:CHI = { has_law = law_type:law_isolationism }
+					has_technology_researched = nationalism	
+					country_rank = rank_value:great_power
+					navy_size >= 150
+				}
+				add = 300
 			}			
 			if = {
 				limit = {
@@ -3906,6 +3988,15 @@ ai_strategy_default = {
 					has_variable = monroe_doctrine	
 				}
 				add = 100
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						owner = root
+						is_incorporated = no
+					}
+				}
+				add = 1000
 			}	
 			if = {
 				limit = {

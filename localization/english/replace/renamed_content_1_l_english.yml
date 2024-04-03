@@ -15,6 +15,8 @@
  
  ai_strategy_mining_exporter:0 "Mining Industry"
  ai_strategy_mining_exporter_desc:0 "[COUNTRY.GetName] wants to excavate new mining shafts and make a fortune exporting the stuff."
+ ai_strategy_emergency_measures:0 "Fiscal Austerity"
+ ai_strategy_emergency_measures_desc:0 "[COUNTRY.GetName] has to introduce austerity measures to meet their existing obligations to pay back loans."
 
  pm_steel_machine: "Steel Machine Tools"
  generic_production_tech_research: "Engineering Powerhouse"
