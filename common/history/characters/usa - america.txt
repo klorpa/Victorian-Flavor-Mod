@@ -164,22 +164,6 @@
 			# }
 		# }
 
-		create_character = { # USA, Admiral
-			is_admiral = yes
-			first_name = Elie_Augustus_Frederick
-			last_name = Lavallette
-			historical = yes
-			culture = cu:dixie
-			interest_group = ig_landowners
-			ideology = ideology_moderate
-			birth_date = 1776.2.9
-			hq = region_dixie
-			traits = {
-				brave
-				basic_naval_commander
-			}
-		}
-
 		create_character = {
 			template = usa_martin_van_buren_character_template
 			on_created = {

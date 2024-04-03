@@ -46,3 +46,42 @@ PRU_karl_hohenzollern = {
 }
 
 #Georg Leopold Graf von Hake, Lieutenant General, IV. Armee-Korps
+
+PRU_richard_wagner_template = {
+    first_name = Richard
+    last_name = Wagner
+    culture = cu:north_german
+    female = no
+    religion = protestant
+    ideology = ideology_traditionalist
+    interest_group = ig_intelligentsia
+    birth_date = 1813.5.22
+    traits = { romantic bigoted }
+    interest_group_leader_usage = {
+		country_trigger = {
+			OR = {
+				AND = {
+					exists = c:GER
+					this = c:GER
+					NOT = { exists = c:SAX }
+					NOT = { exists = c:PRU }
+				}
+				AND = {
+					exists = c:SAX
+					this = c:SAX
+					NOT = { exists = c:PRU }
+				}
+				AND = {
+					exists = c:PRU
+					this = c:PRU
+				}
+			}
+		}
+        interest_group_trigger = {
+            is_interest_group_type = ig_intelligentsia
+        }
+        earliest_usage_date = 1860.1.1
+        latest_usage_date = 1883.2.13
+        chance = 25
+    }
+}

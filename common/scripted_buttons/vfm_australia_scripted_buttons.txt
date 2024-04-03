@@ -24,7 +24,7 @@
 
 	effect = {
 		overlord = {
-			trigger_event = flavor_new_zealand.1
+			trigger_event = flavor_new_zealand_events.1
 		}
 	}
 
@@ -86,7 +86,7 @@ je_australia_gbr_revoke_van_diemens_button = {
 		c:NSW = {
 			annex = c:TAS
 		}
-		add_variable = {
+		set_variable = {
 			name = recently_revoked_colony
 			months = 24
 		}
@@ -119,7 +119,7 @@ je_australia_gbr_revoke_new_zealand_button = {
 		c:NSW = {
 			annex = c:NZL
 		}
-		add_variable = {
+		set_variable = {
 			name = recently_revoked_colony
 			months = 24
 		}
@@ -152,7 +152,7 @@ je_australia_gbr_revoke_south_australia_button = {
 		c:NSW = {
 			annex = c:SAS
 		}
-		add_variable = {
+		set_variable = {
 			name = recently_revoked_colony
 			months = 24
 		}
@@ -202,7 +202,7 @@ je_australia_gbr_found_south_australia_button = {
 				type = dependency
 			}
 		}
-		add_variable = {
+		set_variable = {
 			name = recently_established_colony
 			months = 6
 		}
@@ -253,7 +253,7 @@ je_australia_gbr_found_north_australia_button = {
 				type = dependency
 			}
 		}
-		add_variable = {
+		set_variable = {
 			name = recently_established_colony
 			months = 6
 		}
@@ -295,7 +295,7 @@ je_australia_gbr_found_victoria_button = {
 				type = dependency
 			}
 		}
-		add_variable = {
+		set_variable = {
 			name = recently_established_colony
 			months = 6
 		}
