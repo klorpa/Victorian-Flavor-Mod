@@ -813,44 +813,32 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_BRITTANY
+				state_region = s:STATE_NORMANDY
 				count = 7
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_NORMANDY
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_POITOU
-				count = 3
+				state_region = s:STATE_PICARDY
+				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_CALAIS
-				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BRITTANY
-				count = 16
+				count = 12
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_NORMANDY
-				count = 5
+				count = 16
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_POITOU
-				count = 3
+				state_region = s:STATE_PICARDY
+				count = 5
 			}
 		}
 
