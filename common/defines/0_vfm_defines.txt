@@ -110,6 +110,8 @@ NPolitics = {
 	POP_IG_RANDOM_FACTOR = 0.3
 	MAX_POP_FRACTION_LEAVE_IG = 0.1
 	
+	SECESSION_CHECKPOINT_INTERVAL_BASE_WEEKS = 2	#1 secession progress will be updated every this many weeks (may be affected by modifiers)
+	
 	SECESSION_TURMOIL_CUTOFF = 0.35						# 0.5 Turmoil requires for cultures to start secession
 	SECESSION_WEEKLY_CHANCE_EXCESS_DIV = 40			    # 100 Excess turmoil is divided by this and used to increase chance for secession movements
 	MIN_POP_SIZE_TO_SECEDE = 40000						# Num pops (including dependents) needed for a secession movement to start
@@ -146,11 +148,13 @@ NEconomy = {
 } 
 
 NMilitary = {
-	MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MIN = 0.0005
-	MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MAX = 0.005
-	BATTLE_LETHALITY_MIN = 0.00025 # 0.001
-	BATTLE_LETHALITY_MAX = 0.00250 # 0.005
+	MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MIN = 0.01 	#0.04 The minimum percentage of manpower a unit can lose each week due to attrition
+	MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MAX = 0.03 	#0.12 The maximum percentage of manpower a unit can lose each week due to attrition
+	BATTLE_LETHALITY_MIN = 0.0002 # 0.001
+	BATTLE_LETHALITY_MAX = 0.002  # 0.005
 	USE_TRAVEL_NETWORK = no
+	
+	MANPOWER_RATIO_REQUIRED_TO_CLEAR_DEFEATED_ADMIRALS = 0.75 #0.5	# A Defeated fleet without at least this ratio of current/max manpower will remain Defeated
 }
 
 NDiplomacy = {

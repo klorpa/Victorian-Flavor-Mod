@@ -303,14 +303,14 @@ franco_papal_alliance_2 = {
 
 modifier_drought = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_agriculture_negative.dds
-	building_group_bg_agriculture_throughput_add = -0.4
+	building_group_bg_agriculture_throughput_add = -0.35
 	building_group_bg_plantations_throughput_add = -0.3
 }
 
 modifier_big_drought = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_agriculture_negative.dds
-	building_group_bg_agriculture_throughput_add = -0.6
-	building_group_bg_plantations_throughput_add = -0.45
+	building_group_bg_agriculture_throughput_add = -0.5
+	building_group_bg_plantations_throughput_add = -0.4
 }
 
 exquisite_glass_designs_production_modifier = {

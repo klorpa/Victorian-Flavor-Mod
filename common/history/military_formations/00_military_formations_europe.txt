@@ -639,7 +639,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_CALAIS
-				count = 20
+				count = 15
+			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_PICARDY
+				count = 5
 			}
 
 			combat_unit = {
@@ -669,7 +675,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_LIMOUSIN
-				count = 25
+				count = 20
+			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_POITOU
+				count = 5
 			}
 
 			combat_unit = {
@@ -3274,156 +3286,263 @@
 	    create_military_formation = {
 			type = army
 			hq_region = sr:region_iberia
+			name = Ejercito_del_Centro
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CATALONIA
+				count = 6
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ARAGON
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_CATALONIA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_dragoons
+				state_region = s:STATE_CATALONIA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_CATALONIA
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_ARAGON
+				count = 2
+			}
+		}
+		
+	    create_military_formation = {
+			type = army
+			hq_region = sr:region_iberia
 			name = "2. Ejército de Tierra"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CASTILLA_LA_VIEJA
-				count = 16
+				state_region = s:STATE_VASCONGADAS
+				count = 4
 			}
-
 			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_CASTILLA_LA_VIEJA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NAVARRA
 				count = 5
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
+				type = unit_type:combat_unit_type_dragoons
 				state_region = s:STATE_CASTILLA_LA_VIEJA
-				count = 3
-			}
-		}
-		
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_iberia
-			name = "3. Ejército de Tierra"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ARAGON
-				count = 12
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_ARAGON
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_ARAGON
-				count = 2
-			}
-		}
-		
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_iberia
-			name = "5. Ejército de Tierra"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CATALONIA
-				count = 16
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_CATALONIA
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_CATALONIA
 				count = 1
 			}
-		}
-	}
-
-	c:SPA = {
-	    create_military_formation = {
-			type = army
-			hq_region = sr:region_iberia
-			name = "1. Ejército de Tierra"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CASTILLA_LA_NUEVA
-				count = 12
-			}
-
+			
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_CASTILLA_LA_NUEVA
-				count = 5
+				state_region = s:STATE_NAVARRA
+				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_CASTILLA_LA_NUEVA
+				state_region = s:STATE_VASCONGADAS
 				count = 3
-			}
-		}
-		
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_iberia
-			name = "4. Ejército de Tierra"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ARAGON
-				count = 16
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_ARAGON
-				count = 2
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_ARAGON
-				count = 2
-			}
-		}
-		
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_iberia
-			name = "4. Ejército de Tierra"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ARAGON
-				count = 10
 			}
 		}
 		
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_iberia
-			name = "Real Armada Española"
+			name = Real_Armada_Espaola
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_VASCONGADAS
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_VASCONGADAS
+				count = 2
+			}
+	}
+
+	c:SPA = {
+	    create_military_formation = {
+			type = army
+			hq_region = sr:region_iberia
+			name = Guardia_Real
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_EXTREMADURA
+				count = 3
+			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LEON
+				count = 3
+			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ASTURIAS
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CASTILLA_LA_NUEVA
+				count = 3
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_CASTILLA_LA_NUEVA
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_dragoons
+				state_region = s:STATE_CASTILLA_LA_NUEVA
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_ASTURIAS
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_LEON
+				count = 1
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_iberia
+			name = Ejercito_del_Norte
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GALICIA
+				count = 4
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ANDALUSIA
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GRANADA
+				count = 3
+			}
+
+			combat_unit = { # Fijo de Ceuta
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_AL_RIF
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_VALENCIA
+				count = 4
+			}
+
+			combat_unit = { # Húsares de la Princesa
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_CASTILLA_LA_VIEJA
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_VALENCIA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_MURCIA
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_dragoons
+				state_region = s:STATE_GRANADA
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_dragoons
+				state_region = s:STATE_CASTILLA_LA_VIEJA
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_dragoons
+				state_region = s:STATE_BADAJOZ
+				count = 3
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_GRANADA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_GALICIA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_MURCIA
+				count = 1
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_iberia
+			name = Real_Armada_Espaola
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_GALICIA
-				count = 2
+				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_ANDALUSIA
 				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_GALICIA
-				count = 2
 			}
 
 			combat_unit = {

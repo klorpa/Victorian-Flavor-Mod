@@ -1162,15 +1162,21 @@
 	}
 	
 	c:JAP = {
-		create_military_formation = {
+	    create_military_formation = {
 			type = army
 			hq_region = sr:region_japan
 			name = "1st Army"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_TOHOKU
+				count = 15
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_KANTO
-				count = 20
+				count = 15
 			}
 		}
 		
@@ -1182,7 +1188,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_KANSAI
-				count = 20
+				count = 15
 			}
 		}
 		
@@ -1193,8 +1199,14 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KANTO
+				state_region = s:STATE_CHUBU
 				count = 20
+			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KANTO
+				count = 15
 			}
 		}
 		
@@ -1205,20 +1217,14 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUBU
-				count = 25
+				state_region = s:STATE_CHUGOKU
+				count = 10
 			}
-		}
-		
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "5th Army"
-
+			
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUGOKU
-				count = 15
+				state_region = s:STATE_KYUSHU
+				count = 10
 			}
 		}
 	}

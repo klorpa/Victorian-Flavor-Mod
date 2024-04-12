@@ -141,25 +141,31 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_CIRCARS
-				count = 5
+				count = 8
+			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_MADRAS
+				count = 2
 			}
 			
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_TRAVANCORE
-				count = 5
+				count = 4
 			}
 			
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MYSORE
-				count = 5
+				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_MYSORE
-				count = 5
+				count = 2
 			}
 			
 			combat_unit = {
@@ -171,7 +177,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_MADRAS
-				count = 2
+				count = 3
 			}
 		}
 		

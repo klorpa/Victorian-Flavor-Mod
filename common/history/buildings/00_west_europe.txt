@@ -3309,6 +3309,12 @@
 	}
 	s:STATE_ANHALT={
 		region_state:PRU={
+		    create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_vertical_filing_cabinets" }
+			}
 			create_building={
 				building="building_furniture_manufacturies"
 				level=3
@@ -3483,7 +3489,7 @@
 		region_state:PRU={
 		    create_building={
 				building="building_government_administration"
-				level=2
+				level=3
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
@@ -3565,7 +3571,7 @@
 		region_state:PRU={
 			create_building={
 				building="building_government_administration"
-				level=10
+				level=8
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}

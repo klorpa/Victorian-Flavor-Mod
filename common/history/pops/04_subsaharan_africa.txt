@@ -787,7 +787,7 @@
 		region_state:DEN = {
 			create_pop = {
 				culture = akan
-				size = 906308
+				size = 96308
 			}
 			create_pop = {
 				culture = ewe
@@ -1834,6 +1834,16 @@
 		}
 	}
 	s:STATE_UGANDA = {
+		region_state:TRK = {
+			create_pop = {
+				culture = nilotic
+				size = 55800
+			}
+			create_pop = {
+				culture = kikuyu
+				size = 8396
+			}
+		}
 		region_state:BUG = {
 			create_pop = {
 				culture = lacustrine_bantu

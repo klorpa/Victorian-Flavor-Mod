@@ -1651,12 +1651,12 @@ STATES = {
 		}
 		create_state = {
 			country = c:DEN
-			owned_provinces = { x802111 }
+			owned_provinces = { x802111 x1472E7 }
 			state_type = unincorporated
 		}	
 		create_state = {
 			country = c:ASH
-			owned_provinces = { x1472E7 xDE4D17 xB99E19 x4B8CBE x111F0C xBC1F14 xE63565 x61C0D0 x6A6B14 xB9D107 xDBB653 x14F486 x364DF5 x6B5943 x6C9759 xA624EE x589734 x6FFF10 xE0C0D0 xE9F5E6 x801552 xE0CF6C x946D4E x76AA0B xE797D7 xFBC3B8 xE80D2D xAAFDFC xD14671 x925167 xD845A1 x15B10C x961786 xEC0AF9 xF02A4B xC2E0C0 }
+			owned_provinces = { xDE4D17 xB99E19 x4B8CBE x111F0C xBC1F14 xE63565 x61C0D0 x6A6B14 xB9D107 xDBB653 x14F486 x364DF5 x6B5943 x6C9759 xA624EE x589734 x6FFF10 xE0C0D0 xE9F5E6 x801552 xE0CF6C x946D4E x76AA0B xE797D7 xFBC3B8 xE80D2D xAAFDFC xD14671 x925167 xD845A1 x15B10C x961786 xEC0AF9 xF02A4B xC2E0C0 }
 		}
 		
 		add_homeland = cu:akan
@@ -6080,6 +6080,12 @@ STATES = {
 			country = c:ACH
 			owned_provinces = {
 				x542630 x1D33CE x0DF37F x721418 x7ACC72 x51AC81 x206060 xE3B2A2 xEE81EC xA4C4FC x7796E6 xD13D78 x19F762 x05C5F1
+			}
+		}
+		create_state = {
+			country = c:TRK
+			owned_provinces = {
+				x2DBD09 xB5E965 x5C88B8 x6BE070 xA09C0F
 			}
 		}
 		

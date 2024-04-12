@@ -980,7 +980,7 @@ STATE_KHARKOV = {
     farm = "xD0DA95"
     mine = "x628FBE"
     wood = "xF061E0"
-    arable_land = 56
+    arable_land = 65
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {}
 }
@@ -994,7 +994,7 @@ STATE_POLTAVA = {
     farm = "xDAAE11"
     mine = "x2C6090"
     wood = "xCD7291"
-    arable_land = 65
+    arable_land = 75
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {}
 }
@@ -1022,7 +1022,7 @@ STATE_CHERNIGOV = {
     farm = "xF49A18"
     mine = "xC31716"
     wood = "x44E2F9"
-    arable_land = 50
+    arable_land = 60
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {}
 }
@@ -1048,7 +1048,7 @@ STATE_TAMBOV = {
     farm = "x1084B6"
     mine = "xF49A5A"
     wood = "x135BEB"
-    arable_land = 80
+    arable_land = 85
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 8
