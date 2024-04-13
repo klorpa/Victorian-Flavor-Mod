@@ -162,18 +162,70 @@ ai_strategy_default = {
 		}
 		if = {
 			limit = {
-				AND = {
-					OR = {
-						country_has_primary_culture = cu:north_german
-						country_has_primary_culture = cu:south_german
-					}
-					any_diplomatic_play = {
-						is_diplomatic_play_type = dp_annex_subject
-						target_is = c:SCH					
-					}	
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
 				}
+				has_technology_researched = nationalism
+				any_diplomatic_play = {
+					OR = {
+						target_is = c:SCH	
+                        target_is = c:HOL
+                       }						
+				}	
 			}
-			add = -20
+			subtract = 20
+		}
+		if = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+				}
+				any_diplomatic_play = {
+					any_scope_play_involved = {
+						OR = { is_diplomatic_play_initiator = yes is_diplomatic_play_target = yes }
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}
+					}						
+				}	
+			}
+			subtract = 20
+		}
+		if = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:south_italian
+				}
+				has_technology_researched = nationalism
+				any_diplomatic_play = {
+					any_scope_play_involved = {
+						OR = { is_diplomatic_play_initiator = yes is_diplomatic_play_target = yes }
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}
+					}						
+				}	
+			}
+			subtract = 30
+		}
+		if = {
+			limit = {
+				any_diplomatic_play = {
+					any_scope_play_involved = {
+						OR = { is_diplomatic_play_initiator = yes is_diplomatic_play_target = yes }
+						has_diplomatic_pact = {
+							who = ROOT
+							type = customs_union
+						}
+					}						
+				}	
+			}
+			subtract = 20
 		}
 		# unite against non-muslim invaders
 		if = {

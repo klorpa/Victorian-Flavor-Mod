@@ -242,7 +242,7 @@
 			}
 			create_pop = {
 				culture = misri
-				size = 96
+				size = 296
 			}
 			create_pop = {
 				culture = tigray
@@ -251,7 +251,7 @@
 			}
 			create_pop = {
 				culture = bedouin
-				size = 15900
+				size = 15700
 			}
 			create_pop = {
 				culture = afar
@@ -287,22 +287,17 @@
 			}
 			create_pop = {
 				culture = sudanese
-				size = 36001
+				size = 56001
 			}
 			create_pop = {
-				culture = beja
-				size = 82000
+				culture = misri
+				size = 62000
 			}
 			# 20-30% of Northern Sudan's population may have been enslaved in the early 19th century
 			create_pop = {
 				pop_type = slaves
 				culture = sudanese
-				size = 46000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = beja
-				size = 40000
+				size = 86000
 			}
 		}
 		region_state:ZGH = {
@@ -389,15 +384,15 @@
 		region_state:EGY = {
 			create_pop = {
 				culture = sudanese
-				size = 307600
+				size = 317600
 			}
 			create_pop = {
 				culture = misri
-				size = 1992
+				size = 5992
 			}
 			create_pop = {
 				culture = nuba
-				size = 344100
+				size = 346100
 			}
 			create_pop = {
 				culture = dinka
@@ -410,10 +405,6 @@
 			create_pop = {
 				culture = nuer
 				size = 60000
-			}
-			create_pop = {
-				culture = beja
-				size = 16000
 			}
 			create_pop = {
 				pop_type = slaves
