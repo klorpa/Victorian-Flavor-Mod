@@ -31,6 +31,8 @@ NAI = {
 	PRODUCTION_BUILDING_RANDOM_FACTOR = 5
 	VIOLATE_SOVEREIGNTY_RANDOM_FACTOR = 1.5
 	
+	DIPLO_PLAY_SECESSION_OWN_SECESSION_RISK_FACTOR = 0 #-100 Add this amount of reluctance for AI to back a secession of a culture that has enough pops in their own country to secede
+	
 	CONSTRUCTION_RESERVES_NEW_CONSTRUCTIONS = 0.02 #0.2 If gold reserves are less than this after adding the cost of a new construction, don't queue it	
 	CONSTRUCTION_DEBT_RESUME_CRITICAL_CONSTRUCTION = 0.45 #0.75 If critical constructions are paused, resume once debt is this low relative to ceiling
 	CONSTRUCTION_DEBT_PAUSE_CRITICAL_CONSTRUCTION = 0.65 #0.9 If in this much relative debt to debt ceiling, pause all critical constructions 

@@ -352,6 +352,26 @@ ai_strategy_default = {
 			}
 			add = 50
 		}
+		
+		# German minors should be willing to fight intruders
+		if = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+				}
+				any_diplomatic_play = {
+					any_scope_play_involved = {
+						OR = { is_diplomatic_play_initiator = yes is_diplomatic_play_target = yes }
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}
+					}						
+				}	
+			}
+			add = 75
+		}
 	} 
 		
 	# How many maneuvers are we OK with using up in the initial phase to add more wargoals
@@ -4394,13 +4414,38 @@ ai_strategy_default = {
 						c:AUS ?= { country_rank = rank_value:major_power }
 					}
 					scope:target_country = {
+					OR = {
 						country_has_primary_culture = cu:romanian
 						country_has_primary_culture = cu:bulgarian
 						country_has_primary_culture = cu:greek
+					}
 						is_subject = no
 					}
 				}
 				add = 300
+			}
+			if = { # between a rock and a hard place
+				limit = {
+					OR = {
+						country_has_primary_culture = cu:romanian
+						country_has_primary_culture = cu:bulgarian
+						country_has_primary_culture = cu:greek
+					}
+					is_subject = no
+					OR = {
+						c:TUR ?= { country_rank = rank_value:major_power }
+						c:AUS ?= { country_rank = rank_value:major_power }
+					}
+					scope:target_country = {
+					OR = {
+						country_has_primary_culture = cu:romanian
+						country_has_primary_culture = cu:bulgarian
+						country_has_primary_culture = cu:greek
+					}
+					is_secessionist = yes
+					}
+				}
+				add = 200
 			}
 			
 			# AI should be not be friendly with countries it has claims on
@@ -4440,19 +4485,7 @@ ai_strategy_default = {
 						}
 					}
 				}
-				multiply = 1.5
-			}
-
-			if = {
-				limit = {
-					AND = {
-						has_radical_leftist_economy = yes
-						scope:target_country = {
-							has_radical_leftist_economy = yes
-						}
-					}
-				}
-				multiply = 1.5
+				multiply = 1.7
 			}			
 
 			if = {
@@ -4465,20 +4498,7 @@ ai_strategy_default = {
 					}
 					
 				}
-				multiply = 0.5
-			}
-	
-			if = {
-				limit = {
-					AND = {
-						has_radical_leftist_economy = no			
-						scope:target_country = {
-							has_radical_leftist_economy = yes
-						}
-					}
-					
-				}
-				multiply = 0.5
+				multiply = 0.4
 			}
 	
 			if = {

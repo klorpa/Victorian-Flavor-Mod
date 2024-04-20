@@ -176,7 +176,8 @@ je_anglo_zulu_war = {
 
 	is_shown_when_inactive = {
 		exists = c:ZUL
-		THIS = c:SAF
+		exists = c:SAF
+		THIS ?= c:SAF
 		c:ZUL ?= {
 			any_neighbouring_state = {
 				owner = {
@@ -194,8 +195,11 @@ je_anglo_zulu_war = {
 		c:ZUL ?= {
 			any_neighbouring_state = {
 				OR = {
-					owner = {
-						is_direct_subject_of = c:SAF
+				    AND = {
+						exists = c:SAF
+						owner = {
+							is_direct_subject_of = c:SAF
+						}
 					}
 					owner = ROOT
 				}
@@ -229,8 +233,11 @@ je_anglo_zulu_war = {
 			c:ZUL ?= {
 				any_neighbouring_state = {
 					OR = {
-						owner = {
-							is_direct_subject_of = c:SAF
+						AND = {
+							exists = c:SAF
+							owner = {
+								is_direct_subject_of = c:SAF
+							}
 						}
 						owner = ROOT
 					}
