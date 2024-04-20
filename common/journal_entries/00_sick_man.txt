@@ -92,7 +92,7 @@ je_sick_man_syria = {
 				c:EGY = {
 					custom_tooltip = {
 						text = je_sick_man_syria_tt
-						NOT = {
+						NOR = {
 							has_state_in_state_region = STATE_ALEPPO
 							has_state_in_state_region = STATE_SYRIA
 							has_state_in_state_region = STATE_LEBANON
@@ -132,7 +132,7 @@ je_sick_man_syria = {
 							has_state_in_state_region = STATE_MATRUH
 						}
 						c:EGY = {
-							NOT = {
+							NOR = {
 								has_state_in_state_region = STATE_SINAI
 								has_state_in_state_region = STATE_UPPER_EGYPT
 								has_state_in_state_region = STATE_MIDDLE_EGYPT
@@ -721,7 +721,7 @@ je_sick_man_kurdistan = {
 				text = finished_kurdistan_je_tt
 				AND = {
 					exists = c:KUR
-					c:KUR = {
+					c:KUR ?= {
 						is_subject_of = ROOT
 					}
 				}
@@ -734,6 +734,16 @@ je_sick_man_kurdistan = {
 				owns_entire_state_region = STATE_MOSUL
 				owns_entire_state_region = STATE_BAGHDAD
 			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_DIYARBAKIR
+            is_incorporated = yes
+			turmoil < 0.15
+		} 
+		any_scope_state = {
+			state_region = s:STATE_MOSUL
+            is_incorporated = yes
+			turmoil < 0.15
 		}
 	}
 

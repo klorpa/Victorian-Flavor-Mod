@@ -637,7 +637,7 @@ GLOBAL = {
 	
 	c:TUR = {
 	    add_radicals = {
-			value = 0.08
+			value = 0.3
 			culture = cu:kurdish
 		}
 		add_radicals = {
@@ -645,7 +645,7 @@ GLOBAL = {
 			culture = cu:armenian
 		}
 		add_radicals = {
-			value = 0.03
+			value = 0.08
 			culture = cu:sephardic
 		}
 	    add_radicals = {

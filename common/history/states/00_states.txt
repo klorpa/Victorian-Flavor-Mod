@@ -229,7 +229,7 @@ STATES = {
 	s:STATE_INGRIA = {
 		create_state = {
 			country = c:RUS
-			owned_provinces = { x01A0E0 x607A9E xCD164E xB64167 xD1CBDD xE97616 x57DF51 xB6C9C3 x80A0E0 xBB73A3 xDED975 x042A4F x8F79E9 x0FEA4B x246095 x93FBC9 xAEBDCB xD14E99 xD7689F x3266DE xA577B1 xE7438E xA981B3 x87C547 xDF3F5C x6F9858 xD0DA34 xE9C671 }
+			owned_provinces = { x01A0E0 x607A9E xCD164E xB64167 xD1CBDD xE97616 x57DF51 xBB73A3 xDED975 xD7689F x87C547 xE9C671 }
 		}
 		
 		add_homeland = cu:russian
@@ -6718,6 +6718,7 @@ STATES = {
 		create_state = {
 			country = c:TUR
 			owned_provinces = { x00B0A0 x0A79A0 xA2BD38 x6F55BA x130A78 xBAF0C7 x2F0CE8 x2090E0 xB09D9C xC11149 x07BB1D xE4E63B x029A2B xD097E1 x389F34 x111137 x1F3350 x4BE9F1 }
+			state_type = unincorporated
 		}
 		create_state = {
 			country = c:BAN
@@ -7077,6 +7078,7 @@ STATES = {
 		create_state = {
 			country = c:TUR
 			owned_provinces = { x3CB54F x86D676 x0FD328 x5E4B3A xFB66D7 x95EA60 xC9CF24 x00D000 x6E2D49 x510E91 xC33C0F x9E2132 xA090E0 x31F004 x9457C4 x55EC85 x47DD99 x1D287B xA57AFA x8A4F16 xD8B670 x60D4AE x665380 x319F6B xF3EE0A x376F7A }
+			state_type = unincorporated
 		}
 		create_state = {
 			country = c:BIT
