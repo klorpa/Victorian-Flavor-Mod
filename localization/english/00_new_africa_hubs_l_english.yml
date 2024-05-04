@@ -1,0 +1,77 @@
+﻿l_english:
+  # West Africa - Missing Names
+    HUB_NAME_STATE_UPPER_COAST_city: "Korhogo"
+    HUB_NAME_STATE_UPPER_COAST_farm: "Bondoukou"
+    HUB_NAME_STATE_UPPER_COAST_mine: "Odienne"
+    HUB_NAME_STATE_UPPER_COAST_wood: "Ferkessédougou"
+
+    HUB_NAME_STATE_GUINEA_BISSAU_city: "Bissau"
+    HUB_NAME_STATE_GUINEA_BISSAU_farm: "Bafatá"
+    HUB_NAME_STATE_GUINEA_BISSAU_mine: "Gabu"
+    HUB_NAME_STATE_GUINEA_BISSAU_port: "Catió"
+    HUB_NAME_STATE_GUINEA_BISSAU_wood: "Canchungo"
+
+    HUB_NAME_STATE_NORTH_CAMEROON_port: "Archibong"
+
+    HUB_NAME_STATE_INDIAN_OCEAN_TERRITORY_mine: "Victoria"
+
+  #West Africa - Replaced Names
+    HUB_NAME_STATE_WINDWARD_COAST_city: "Yamoussoukro"
+    HUB_NAME_STATE_WINDWARD_COAST_mine: "Man"
+    HUB_NAME_STATE_WINDWARD_COAST_port: "San-Pedro"
+
+    HUB_NAME_STATE_IVORY_COAST_city: "Abidjan"
+    HUB_NAME_STATE_IVORY_COAST_farm: "Abengourou"
+    HUB_NAME_STATE_IVORY_COAST_mine: "Daoukro"
+    HUB_NAME_STATE_IVORY_COAST_port: "Grand-Bassam"
+    HUB_NAME_STATE_IVORY_COAST_wood: "Agboville"
+
+    HUB_NAME_STATE_SENEGAL_farm: "Touba"
+
+    HUB_NAME_STATE_BENIN_farm: "Warri"
+    HUB_NAME_STATE_BENIN_mine: "Auchi"
+
+    HUB_NAME_STATE_EAST_HAUSALAND_city: "Kano"
+    HUB_NAME_STATE_EAST_HAUSALAND_mine: "Zaria"
+
+    HUB_NAME_STATE_HAUSALAND_farm: "Jega"
+    HUB_NAME_STATE_HAUSALAND_wood: "Zuru"
+
+    HUB_NAME_STATE_NIGERIA_city: "Abuja"
+    HUB_NAME_STATE_NIGERIA_farm: "Kontagora"
+    HUB_NAME_STATE_NIGERIA_wood: "Jalingo"
+
+    HUB_NAME_STATE_BORNU_city: "Maiduguri"
+    HUB_NAME_STATE_BORNU_farm: "Damaturu"
+    HUB_NAME_STATE_BORNU_wood: "Biu"
+
+  # Southern Africa
+    HUB_NAME_STATE_EAST_ANGOLA_city: "Luena"
+    HUB_NAME_STATE_EAST_ANGOLA_farm: "Menongue"
+
+    HUB_NAME_STATE_NYASALAND_city: "Lilongwe"
+    HUB_NAME_STATE_NYASALAND_farm: "Blantyre"
+    HUB_NAME_STATE_NYASALAND_mine: "Mzuzu"
+    HUB_NAME_STATE_NYASALAND_wood: "Mchinji"
+
+  # Central Africa
+    HUB_NAME_STATE_KIVU_city: "Bukavu"
+    HUB_NAME_STATE_KIVU_farm: "Goma"
+    HUB_NAME_STATE_KIVU_mine: "Walikale"
+    HUB_NAME_STATE_KIVU_wood: "Butembo"
+
+    HUB_NAME_STATE_RUANDA_URUNDI_city: "Kigali"
+    HUB_NAME_STATE_RUANDA_URUNDI_farm: "Bujumbura"
+    HUB_NAME_STATE_RUANDA_URUNDI_mine: "Gitega"
+    HUB_NAME_STATE_RUANDA_URUNDI_wood: "Gisyeni"
+
+    HUB_NAME_STATE_TANGANYIKA_city: "Tabora"
+    HUB_NAME_STATE_TANGANYIKA_mine: "Katubuka"
+
+  # Northeast Africa
+    HUB_NAME_STATE_SOMALILAND_port: "Basaso"
+    HUB_NAME_STATE_SOMALILAND_wood: "Baidoa"
+
+    HUB_NAME_STATE_NORTH_SOMALILAND_port: "Djibouti"
+
+    HUB_NAME_STATE_ERITREA_port: "ssab"

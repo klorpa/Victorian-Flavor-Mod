@@ -1,0 +1,18 @@
+﻿l_english:
+  # Caribbean
+    HUB_NAME_STATE_ABC_ISLANDS_farm: "Kralendijk"
+
+    HUB_NAME_STATE_BAHAMAS_mine: "Farmer's Hill"
+
+    HUB_NAME_STATE_JAMAICA_port: "Portmore"
+    HUB_NAME_STATE_JAMAICA_wood: "May Pen"
+
+  # United States
+    HUB_NAME_STATE_RHODE_ISLAND_wood: "New London"
+
+    HUB_NAME_STATE_DELAWARE_wood: "Lewes"
+
+  # Mexico
+    HUB_NAME_STATE_RIO_GRANDE_mine: "Ciudad Mante"
+
+    HUB_NAME_STATE_JALISCO_mine: "Lagos de Moreno"
