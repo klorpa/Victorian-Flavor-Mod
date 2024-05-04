@@ -325,7 +325,7 @@ modifier_shipyard_positive = {
 
 modifier_storm = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
-	building_group_bg_logging_throughput_add = -0.4
+	building_group_bg_logging_throughput_add = -0.33
 }
 
 modifier_potato_blight = {

@@ -3127,16 +3127,21 @@ ai_strategy_default = {
 
 		if = {
 			limit = { has_strategy = ai_strategy_placate_population }
-			multiply = 0.75	
+			multiply = 0.8	
 		}
 		
 		if = {
 			limit = { has_strategy = ai_strategy_maintain_mandate_of_heaven }
-			multiply = 0.35		
-		}			
+			multiply = 0.5		
+		}	
+
+		if = {
+			limit = { has_technology_researched = steel_frame_buildings }
+			multiply = 1.15
+		}		
 
 		min = 1
-		max = 700
+		max = 800
 	}
 	
 	# How many levels of barracks should the AI have
@@ -3156,10 +3161,10 @@ ai_strategy_default = {
 
 		max = 350 # VFM - No more than 350 from population, bumped up from base 250
 
-		add = {
-			value = gdp
-			divide = 500000 # 1 level of barracks per 500k gdp
-		}		
+        add = {
+			value = income
+			divide = 2500
+		}			
 
 		# More advanced standing armies are expensive and should be smaller relative to population
 		#VFM TODO: change this to actually refer to PMs in use rather than tied to tech, current way makes countries weaker even if they couldn't afford the units of the tech in the first place
@@ -3289,13 +3294,13 @@ ai_strategy_default = {
 
 		max = 250 # No more than 250 from population		
 
-		# 1 level of naval base per 1 million gdp, multiplied by relative incorporated coastal population to total incorporated population
+		# 1 level of naval base per 5k income, multiplied by relative incorporated coastal population to total incorporated population
 		add = {
-			value = gdp
+			value = income
 			divide = cached_ai_incorporated_population
 			multiply = cached_ai_incorporated_coastal_population
-			divide = 1000000 
-		}
+			divide = 5000 
+		}	
 
         # Need to favor industrial buildup early game
 		if = {
@@ -3491,7 +3496,7 @@ ai_strategy_default = {
 		small_arms = {
 			stance = wants_high_supply
 			trigger = {
-				has_technology_researched = napoleonic_warfare
+				has_technology_researched = line_infantry
 			}
 		}
 		artillery = {
@@ -3533,7 +3538,7 @@ ai_strategy_default = {
 					has_technology_researched = gantry_cranes				
 				}
 				has_port = yes
-				country_rank >= rank_value:major_power
+				OR = { country_rank >= rank_value:major_power gdp > 12000000 }
 			}
 		}
 		manowars = {
@@ -3545,7 +3550,7 @@ ai_strategy_default = {
 					has_technology_researched = gantry_cranes				
 				}
 				has_port = yes
-				country_rank >= rank_value:major_power
+				OR = { country_rank >= rank_value:major_power gdp > 12000000 }
 			}
 		}	
 		steamers = {
@@ -3554,7 +3559,7 @@ ai_strategy_default = {
 				has_technology_researched = ironclad_tech
 				has_technology_researched = gantry_cranes
 				has_port = yes
-				country_rank >= rank_value:major_power
+				OR = { country_rank >= rank_value:major_power gdp > 12000000 }
 			}
 		}			
 		ironclads = {
@@ -3563,7 +3568,7 @@ ai_strategy_default = {
 				has_technology_researched = ironclad_tech
 				has_technology_researched = gantry_cranes
 				has_port = yes
-				country_rank >= rank_value:major_power				
+				OR = { country_rank >= rank_value:major_power gdp > 12000000 }			
 			}
 		}	
 		paper = {
@@ -3571,7 +3576,12 @@ ai_strategy_default = {
 			trigger = {
 				has_technology_researched = centralization
 				total_population >= 1000000
-				NOT = { has_law = law_type:law_traditionalism }
+			}
+		}
+		telephones = {
+			stance = wants_high_supply
+			trigger = {
+				has_technology_researched = central_planning
 			}
 		}
 		electricity = { 
@@ -3583,7 +3593,7 @@ ai_strategy_default = {
 		coal = { 
 			stance = wants_high_supply
 			trigger = {
-				has_technology_researched = railways
+				has_technology_researched = atmospheric_engine
 			}
 		}	
 		engines = { 
@@ -3607,10 +3617,18 @@ ai_strategy_default = {
 			}
 		}
 		hardwood = { 
-			stance = wants_high_supply 
+			stance = wants_high_supply
 			trigger = {
-				has_building = building_furniture_manufacturies
-				total_population >= 1000000
+				OR = {
+					has_building = building_arms_industry
+					has_building = building_artillery_foundries
+				}
+			}
+		}
+        explosives = {
+			stance = wants_high_supply
+			trigger = {
+				has_building = building_munition_plants
 			}
 		}		
 	}

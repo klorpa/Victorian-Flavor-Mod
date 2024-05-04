@@ -366,6 +366,7 @@ in_potato_blight_zone = {
 		region = sr:region_gaelic
 		region = sr:region_north_germany
 		region = sr:region_low_countries
+		state_region = s:STATE_GOTALAND
 	}
 }
 
@@ -382,6 +383,7 @@ in_potato_blight_mild_zone = {
 		region = sr:region_belarus
 		region = sr:region_hungary
 	}
+	NOT = { state_region = s:STATE_GOTALAND }
 }
 
 in_hurricane_zone = {

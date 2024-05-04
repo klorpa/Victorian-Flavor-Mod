@@ -146,7 +146,7 @@ commander_battle_end_loss = {
 in_default = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	state_construction_mult = -0.3
-	building_throughput_add = -0.2
+	building_throughput_add = -0.1
 	unit_offense_mult = -0.5
 	unit_defense_mult = -0.5
 }
@@ -536,7 +536,7 @@ state_region_devastation = {
 	state_infrastructure_mult = -1.0
 	state_mortality_mult = 2.0
 	state_migration_pull_mult = -2.0
-	building_throughput_add = -1.0
+	building_throughput_add = -0.5
 }
 
 # Scales with pollution impact, reduced by state_pollution_reduction_health_mult
@@ -587,7 +587,7 @@ state_turmoil_extreme = {
 # Capped at COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER
 country_gdp = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	country_minting_add = 1 # TODO: lower
+	country_minting_add = 1
 }
 
 # Scales with total army power projection of a country
