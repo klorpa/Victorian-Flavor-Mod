@@ -366,11 +366,34 @@ in_potato_blight_zone = {
 		region = sr:region_gaelic
 		region = sr:region_north_germany
 		region = sr:region_low_countries
-		state_region = s:STATE_GOTALAND
 	}
 }
 
 in_potato_blight_mild_zone = {
+	OR = {
+		region = sr:region_rhine
+		region = sr:region_france
+		region = sr:region_england
+		region = sr:region_north_sea_coast
+		region = sr:region_scandinavia
+		region = sr:region_south_germany
+		region = sr:region_poland
+		region = sr:region_baltic
+		region = sr:region_belarus
+		region = sr:region_hungary
+	}
+}
+
+in_potato_blight_zone_2 = { # TEST
+	OR = {
+		region = sr:region_gaelic
+		region = sr:region_north_germany
+		region = sr:region_low_countries
+		state_region = s:STATE_GOTALAND
+	}
+}
+
+in_potato_blight_mild_zone_2 = {
 	OR = {
 		region = sr:region_rhine
 		region = sr:region_france
