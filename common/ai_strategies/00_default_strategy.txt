@@ -169,8 +169,8 @@ ai_strategy_default = {
 				has_technology_researched = nationalism
 				any_diplomatic_play = {
 					OR = {
-						target_is = c:SCH	
-                        target_is = c:HOL
+						target_is ?= c:SCH	
+                        target_is ?= c:HOL
                        }						
 				}	
 			}

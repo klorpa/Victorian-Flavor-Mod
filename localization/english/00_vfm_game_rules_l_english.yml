@@ -65,9 +65,9 @@
   
   rule_ottoman_subjects: "#blue;bold MAP :#! Micro Subjects Middle East"
   setting_yes_ottoman_subjects: "Enabled"
-  setting_yes_ottoman_subjects_desc: "Kurdistan and Iraq will be made up of 18 subjected micro nations \n #green VFM DEFAULT#!"
+  setting_yes_ottoman_subjects_desc: "Kurdistan and Iraq will be made up of 18 subjected micro nations"
   setting_no_ottoman_subjects: "Disabled"
-  setting_no_ottoman_subjects_desc: "The region will be under Ottoman and Persian control."
+  setting_no_ottoman_subjects_desc: "The region will be under Ottoman and Persian control \n #green VFM DEFAULT#!"
   
   rule_vfm_starting_countries: "#blue;bold MAP :#! VFM Starting Countries"
   setting_yes_vfm_starting_countries: "Enabled"
