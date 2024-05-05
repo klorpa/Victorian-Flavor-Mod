@@ -553,14 +553,13 @@ STATE_VALENCIA = {
     farm = "x626878"
     mine = "xE0BED4"
     wood = "xD06040"
-    arable_land = 60
+    arable_land = 35
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_coal_mining = 60
-        bg_iron_mining = 30
-        bg_lead_mining = 30
-        bg_logging = 5
-        bg_fishing = 10
+        bg_coal_mining = 40
+        bg_lead_mining = 20
+        bg_logging = 3
+        bg_fishing = 6
     }
     naval_exit_id = 3032
 }
@@ -611,13 +610,13 @@ STATE_MURCIA = {
     farm = "x626878"
     mine = "xE0BED4"
     wood = "xD06040"
-    arable_land = 10
+    arable_land = 25
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_coal_mining = 30
+        bg_coal_mining = 20
         bg_iron_mining = 10
-        bg_logging = 5
-        bg_fishing = 10
+        bg_logging = 2
+        bg_fishing = 4
     }
     naval_exit_id = 3032
 }
