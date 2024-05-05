@@ -54,6 +54,12 @@
     HUB_NAME_STATE_NYASALAND_mine: "Mzuzu"
     HUB_NAME_STATE_NYASALAND_wood: "Mchinji"
 
+    HUB_NAME_STATE_ZULULAND_city: "Ulundi"
+    HUB_NAME_STATE_ZULULAND_port: "Richards Bay"
+    HUB_NAME_STATE_ZULULAND_mine: "Newcastle"
+    HUB_NAME_STATE_ZULULAND_farm: "Mtubatuba"
+    HUB_NAME_STATE_ZULULAND_wood: "NKandia"
+
   # Central Africa
     HUB_NAME_STATE_KIVU_city: "Bukavu"
     HUB_NAME_STATE_KIVU_farm: "Goma"
@@ -74,4 +80,20 @@
 
     HUB_NAME_STATE_NORTH_SOMALILAND_port: "Djibouti"
 
-    HUB_NAME_STATE_ERITREA_port: "ssab"
+    HUB_NAME_STATE_ERITREA_port: "Assab"
+
+    HUB_NAME_STATE_OROMIA_city: "Goba"
+    HUB_NAME_STATE_OROMIA_farm: "Degeh Bur"
+    HUB_NAME_STATE_OROMIA_wood: "Raaso"
+
+    HUB_NAME_STATE_AMHARA_city: "Addis Ababa"
+    HUB_NAME_STATE_AMHARA_farm: "Nekemte"
+    HUB_NAME_STATE_AMHARA_mine: "Hawassa"
+    HUB_NAME_STATE_AMHARA_wood: "Ambo"
+
+    HUB_NAME_STATE_GAMBELA_city: "Arba Minch"
+    HUB_NAME_STATE_GAMBELA_farm: "Yabelo"
+    HUB_NAME_STATE_GAMBELA_mine: "Gambela"
+    HUB_NAME_STATE_GAMBELA_wood: "Jinka"
+
+    HUB_NAME_STATE_GONDER_wood: "Lalibela"
