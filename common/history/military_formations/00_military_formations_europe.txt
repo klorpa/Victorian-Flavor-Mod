@@ -3332,18 +3332,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_VASCONGADAS
-				count = 4
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_CASTILLA_LA_VIEJA
-				count = 5
+				count = 8
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_NAVARRA
-				count = 5
+				count = 6
 			}
 
 			combat_unit = {
@@ -3360,7 +3355,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_VASCONGADAS
+				state_region = s:STATE_NAVARRA
 				count = 3
 			}
 		}
@@ -3372,13 +3367,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_VASCONGADAS
+				state_region = s:STATE_NAVARRA
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_VASCONGADAS
+				state_region = s:STATE_NAVARRA
 				count = 2
 			}
 	}
