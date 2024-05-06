@@ -847,7 +847,7 @@
 		region_state:SPA={
 			create_building={
 				building="building_government_administration"
-				level=7
+				level=8
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
@@ -871,7 +871,7 @@
 			}
 			create_building={
 				building="building_arms_industry"
-				level=1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_muskets" "pm_merchant_guilds_building_arms_industry" }
 			}
@@ -1091,21 +1091,49 @@
 			}
 			create_building={
 				building="building_logging_camp"
-				level=4
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
-				level=2
+				level=1
 				reserves=1
 				activate_production_methods={ "default_building_vineyard_plantation" "pm_privately_owned_plantation" }
+			}
+		}
+	}
+	s:STATE_VASCONGADAS={
+		region_state:CAR={
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_muskets" "pm_merchant_guilds_building_arms_industry" }
+			}
+			create_building={
+				building="building_artillery_foundries"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_cannons" "pm_merchant_guilds_building_artillery_foundries" }
 			}
 			create_building={
 				building="building_wheat_farm"
 				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_privately_owned" }
+			}
+			create_building={
+				building="building_vineyard_plantation"
+				level=1
+				reserves=1
+				activate_production_methods={ "default_building_vineyard_plantation" "pm_privately_owned_plantation" }
+			}
+			create_building={
+				building="building_logging_camp"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
 			}
 			create_building={
 				building="building_port"
@@ -1280,7 +1308,7 @@
 			}
 			create_building={
 				building="building_military_shipyards"
-				level=1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_merchant_guilds_building_military_shipyards" "pm_military_shipbuilding_wooden" }
 			}
