@@ -99,7 +99,7 @@ popneed_heating = {
 	}
 	
 	entry = {
-		goods = hard_wood
+		goods = hardwood
 		
 		weight = 0.25
 		max_supply_share = 0.25
