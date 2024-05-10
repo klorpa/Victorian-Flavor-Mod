@@ -221,7 +221,7 @@ peru_bolivia_confederation.2 = { #End of the civil war of 1835 and capture of Sa
 		c:BOL = {
 			trigger_event = {
 				id = peru_bolivia_confederation.3
-				days = 10
+				days = 2
 			}
 			set_global_variable = { name = coup_ended }
 		}
@@ -266,7 +266,7 @@ peru_bolivia_confederation.2 = { #End of the civil war of 1835 and capture of Sa
 		c:BOL = {
 			trigger_event = {
 				id = peru_bolivia_confederation.3
-				days = 10
+				days = 2
 			}
 			set_global_variable = { name = coup_ended }
 		}
