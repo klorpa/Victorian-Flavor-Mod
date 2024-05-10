@@ -82,7 +82,7 @@ je_peru_bolivia_the_feeble_union = {
 
 			c:NPU ?= {
 				trigger_event = {
-					id = peru_bolivia_confederation.8
+					id = journal_flavor_peru.1
 				}
 			}
 		}
