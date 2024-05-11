@@ -221,15 +221,10 @@ peru_bolivia_confederation.2 = { #End of the civil war of 1835 and capture of Sa
 		c:BOL = {
 			trigger_event = {
 				id = peru_bolivia_confederation.3
-				days = 10
+				days = 2
 			}
 			set_global_variable = { name = coup_ended }
 		}
-		hidden_effect = {
-			c:CHL = {
-				trigger_event = peru_bolivia_confederation.13
-			}
-		}	
 		ai_chance = {
 			base = 25
 		}
@@ -247,9 +242,6 @@ peru_bolivia_confederation.2 = { #End of the civil war of 1835 and capture of Sa
 				add_character_role = general
 				free_character_from_void = yes
 				exile_character_with_martyrdom = yes
-			}
-			c:CHL = {
-				trigger_event = peru_bolivia_confederation.13
 			}
 		}
 		custom_tooltip = {
@@ -274,7 +266,7 @@ peru_bolivia_confederation.2 = { #End of the civil war of 1835 and capture of Sa
 		c:BOL = {
 			trigger_event = {
 				id = peru_bolivia_confederation.3
-				days = 10
+				days = 2
 			}
 			set_global_variable = { name = coup_ended }
 		}
@@ -936,91 +928,8 @@ peru_bolivia_confederation.12 = { #Bolivian reaction/notification of Aliaga - Be
 	}
 }
 
-peru_bolivia_confederation.13 = { #Portales Chile
+peru_bolivia_confederation.13 = { #Portales Chile #Replaced by peru_bolivia_events.4 but the localization for the event is still in use
 
-	type = country_event
-	placement = ROOT
-	title = peru_bolivia_confederation.13.t
-	desc = peru_bolivia_confederation.13.d
-	flavor = peru_bolivia_confederation.13.f
-
-	duration = 1
-
-	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
-	}
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
-
-	immediate = {
-		c:BOL = {
-			trigger_event = {
-				id = peru_bolivia_confederation.14
-				months = 10
-			}
-			save_scope_as = bol_scope
-		}
-	}
-
-	trigger = {
-
-	}
-
-	option = {
-		default_option = yes	
-		name = peru_bolivia_confederation.13.a
-		
-		create_diplomatic_pact = {
-			country = c:BOL
-			type = rivalry
-		}
-
-		change_relations = {
-			country = c:BOL
-			value = -20
-		}
-
-		add_loyalists = {
-			strata = rich
-			value = 0.05	
-		}
-
-		add_journal_entry = {
-			type = je_war_of_the_confederation
-		}
-		add_modifier = {
-			name = modifier_against_the_confederation
-			months = short_modifier_time
-		}
-		if = { #Why? Because goal_add_value causes wonky things if we tie it directly to this variable. TODO revisit when support for a static target value in JEs.
-			limit = {
-				exists = global_var:peru_bolivia_var
-			}
-			set_variable = { name = peru_bolivia_opposition_var value = global_var:peru_bolivia_var }
-		}
-
-		ai_chance = 75
-	}
-
-	option = {
-		name = peru_bolivia_confederation.13.b
-
-		add_journal_entry = {
-			type = je_war_of_the_confederation
-		}
-		if = { #Why? Because goal_add_value causes wonky things if we tie it directly to this variable. TODO revisit when support for a static target value in JEs.
-			limit = {
-				exists = global_var:peru_bolivia_var
-			}
-			set_variable = { name = peru_bolivia_opposition_var value = global_var:peru_bolivia_var }
-		}		
-
-		add_radicals = {
-			strata = rich
-			value = 0.07
-		}
-		ai_chance = 25
-	}
 }
 
 peru_bolivia_confederation.14 = { #Kill Portales Plot

@@ -416,8 +416,6 @@
                                 c:NPU = this
                             }
                         }
-					    exists = c:PEU
-                        c:PEU = this
                     }
                 }
                 OR = {
