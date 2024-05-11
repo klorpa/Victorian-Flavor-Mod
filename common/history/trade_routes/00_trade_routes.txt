@@ -1439,7 +1439,7 @@
 	}
 	
 	# Switzerland
-	c:BEX = {
+	c:SWI = {
 		create_trade_route = {
 			goods = small_arms
 			level = 1

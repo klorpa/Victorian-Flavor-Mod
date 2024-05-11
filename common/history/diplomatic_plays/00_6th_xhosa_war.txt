@@ -7,7 +7,14 @@
 			
 			war = yes
 			
-			type = dp_make_protectorate
+			type = humiliation
+			
+			add_war_goal = {
+				holder = c:SAF
+				type = conquer_state
+				target_state = s:STATE_EASTERN_CAPE.region_state:XHO
+				primary_demand = yes
+			}
 
 			add_war_goal = {
 				holder = c:XHO

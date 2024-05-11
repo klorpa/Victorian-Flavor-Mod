@@ -211,7 +211,7 @@ SIL = {
 MTB = {
 	color = { 142 80 55 }
 	
-	country_type = unrecognized
+	country_type = decentralized
 	
 	tier = kingdom
 	
@@ -510,7 +510,7 @@ BNG = {
 BST = {
 	color = { 137 106 217 }
 	
-	country_type = unrecognized
+	country_type = decentralized
 	
 	tier = principality
 	

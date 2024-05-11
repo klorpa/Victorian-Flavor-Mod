@@ -368,7 +368,7 @@ XHO= {
 RZW= {
 	color = { 153 25 0 }
 	
-	country_type = unrecognized
+	country_type = decentralized
 	
 	tier = kingdom
 	
@@ -378,7 +378,7 @@ RZW= {
 GZA= {
 	color = { 0 128 21 }
 	
-	country_type = unrecognized
+	country_type = decentralized
 	
 	tier = kingdom
 	

@@ -123,8 +123,10 @@
 		add_declared_interest = region_andes
 		add_declared_interest = region_gran_colombia
 	}	
-    c:BEX = {
+    c:SWI = {
 		add_declared_interest = region_south_germany
+		add_declared_interest = region_france
+		add_declared_interest = region_rhine
 	}	
 	c:USA = {
 		add_declared_interest = region_great_plains

@@ -2678,7 +2678,7 @@
 		}
 	}
 	
-	c:BEX = {
+	c:SWI = {
 		create_military_formation = { # Switzerland
 			type = army
 			hq_region = sr:region_switzerland

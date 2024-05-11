@@ -87,7 +87,7 @@
 	}
 	
 	#Bern
-	c:BEX = {
+	c:SWI = {
 		# set_next_election_date = ???
 		
 		effect_starting_technology_tier_2_tech = yes

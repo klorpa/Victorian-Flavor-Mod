@@ -29,6 +29,7 @@
 		priority = 50
 		trigger = { 
 			exists = c:ORA
+			exists = c:SAF
 			OR = {
 				coa_def_british_ensign_trigger = yes
 				c:ORA = {
@@ -84,6 +85,7 @@ TRN = { # Transvaal
 		priority = 50
 		trigger = { 
 			exists = c:TRN
+			exists = c:SAF
 			OR = {
 				coa_def_british_ensign_trigger = yes
 				c:TRN = {

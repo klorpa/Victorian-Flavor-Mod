@@ -741,20 +741,6 @@
 		}
 	}
 	
-	c:SWZ = {
-	    create_military_formation = {
-			type = army
-			hq_region = sr:region_southern_africa
-			name = "1. Army"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_SWAZILAND
-				count = 2
-			}
-		}
-	}
-	
 	c:ZOU = {
 	    create_military_formation = {
 			type = army

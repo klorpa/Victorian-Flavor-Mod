@@ -1397,114 +1397,22 @@
 		}
 	}
 	s:STATE_EAST_SWITZERLAND = {
+		region_state:SWI = {
+			# 895200 total
+			# 43.3% Protestant, 56.7% Catholic
 
-		region_state:GLA = {
-			create_pop = {
-				culture = alemannic
-				size = 48550
-			}
-		}
-		region_state:GRS = {
-			create_pop = {
-				culture = alemannic
-				size = 48550
-			}
-		}
-		region_state:APA = {
-			create_pop = {
-				culture = alemannic
-				size = 48550
-			}
-		}
-		region_state:THU = {
-			create_pop = {
-				culture = alemannic
-				size = 48550
-			}
-		}
-		region_state:GLL = {
-			create_pop = {
-				culture = alemannic
-				size = 48550
-			}
-		}
-		region_state:SHU = {
-			create_pop = {
-				culture = alemannic
-				size = 48550
-			}
-		}
-		region_state:ZUR = {
-			create_pop = {
-				culture = alemannic
-				size = 48550
-			}
-		}
-		region_state:AAU = {
-			create_pop = {
-				culture = alemannic
-				size = 48550
-			}
-		}
-
-		region_state:TIC = {
 			create_pop = {
 				culture = alemannic
 				religion = catholic
-				size = 63350
+				size = 320014
 			}
-		}
-		region_state:ZUG = {
 			create_pop = {
 				culture = alemannic
-				religion = catholic
-				size = 63350
-			}
-		}
-		region_state:URI = {
-			create_pop = {
-				culture = alemannic
-				religion = catholic
-				size = 63350
-			}
-		}
-		region_state:NID = {
-			create_pop = {
-				culture = alemannic
-				religion = catholic
-				size = 63350
-			}
-		}
-		region_state:OBW = {
-			create_pop = {
-				culture = alemannic
-				religion = catholic
-				size = 63350
-			}
-		}
-		region_state:API = {
-			create_pop = {
-				culture = alemannic
-				religion = catholic
-				size = 63350
-			}
-		}
-		region_state:SCZ = {
-			create_pop = {
-				culture = alemannic
-				religion = catholic
-				size = 63350
-			}
-		}
-		region_state:LNE = {
-			create_pop = {
-				culture = alemannic
-				religion = catholic
-				size = 63350
+				size = 388400
 			}
 
-			# alemannic Italians probably constituted something like 8 percent? That's been near the average over the 20th century back to 1910 statistics.
-			# No separate Romansh culture, but I'm arbitrarily pinning it at 1.5% and counting it towards the Italian total, so this figure should be 9.5% of the total starting alemannic population of 1966164
+			# Swiss Italians probably constituted something like 8 percent? That's been near the average over the 20th century back to 1910 statistics.
+			# No separate Romansh culture, but I'm arbitrarily pinning it at 1.5% and counting it towards the Italian total, so this figure should be 9.5% of the total starting Swiss population of 1966164
 			# Ticino and Grisons account for almost the entire Italian population, and Grisons further accounts for the Romansh population.
 			# I realize this runs into the old Questione Ladina. Don't care.
 
@@ -1515,14 +1423,23 @@
 		}
 	}
 	s:STATE_WEST_SWITZERLAND = {
-		region_state:VIS = {
+		region_state:SWI = {
+			# 1070964 total
+			# 31.4% Catholic, 68.6% Protestant
+
+			# 412894 Franco-Provencal total, by guessing a total Romand population of Switzerland of 21%, derived by pulling a number out of thin air
 			create_pop = {
 				culture = francoprovencal
-				religion = reformed
+				# catholic
+				size = 129756
+			}
+			create_pop = {
+				culture = francoprovencal
+				religion = protestant
 				size = 283138
 			}
 
-			# 658070 non-Romand alemannic, which I am treating as all being alemannic Germans
+			# 658070 non-Romand Swiss, which I am treating as all being Swiss Germans
 			create_pop = {
 				culture = alemannic
 				size = 451436
@@ -1530,51 +1447,7 @@
 			create_pop = {
 				culture = alemannic
 				religion = catholic
-				size = 112186
-			}
-		}
-		region_state:NTL = {
-			create_pop = {
-				culture = francoprovencal
-				religion = catholic
-				size = 112186
-			}
-		}
-		region_state:FRI = {
-			create_pop = {
-				culture = francoprovencal
-				religion = catholic
-				size = 112186
-			}
-		}
-		region_state:GVA = {
-			create_pop = {
-				culture = francoprovencal
-				size = 146880
-			}
-		}
-		region_state:VAU = {
-			create_pop = {
-				culture = francoprovencal
-				size = 146880
-			}
-		}
-		region_state:BEX = {
-			create_pop = {
-				culture = francoprovencal
-				size = 146880
-			}
-		}
-		region_state:SRN = {
-			create_pop = {
-				culture = francoprovencal
-				size = 146880
-			}
-		}
-		region_state:BSL = {
-			create_pop = {
-				culture = francoprovencal
-				size = 146880
+				size = 206634
 			}
 		}
 	}

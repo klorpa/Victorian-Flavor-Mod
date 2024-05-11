@@ -3151,7 +3151,7 @@
 			}
 			create_pop = {
 				culture = nguni
-				size = 5000
+				size = 80000
 			}
 			create_pop = {
 				culture = tswana
@@ -3378,18 +3378,6 @@
 			create_pop = {
 				culture = tonga
 				size = 57000
-			}
-		}
-	}
-	s:STATE_SWAZILAND = {
-		region_state:SWZ = {
-			create_pop = {
-				culture = nguni
-				size = 64396
-			}
-			create_pop = {
-				culture = nguni
-				size = 10412
 			}
 		}
 	}
