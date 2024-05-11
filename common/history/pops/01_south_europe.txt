@@ -295,7 +295,6 @@
 		}
 	}
 	s:STATE_NAVARRA = {
-	    # added back some pop that were missing after state was split into this and STATE_VASCONGADAS, state had 1.3 million pops before split
 		region_state:CAR = {
 			create_pop = {
 				culture = basque
@@ -304,6 +303,14 @@
 			create_pop = {
 				culture = spanish
 				size = 212700
+			}
+			create_pop = {
+				culture = basque
+				size = 544808
+			}
+			create_pop = {
+				culture = spanish
+				size = 163128
 			}
 		}
 	}
@@ -483,19 +490,6 @@
 			create_pop = {
 				culture = spanish
 				size = 704020
-			}
-		}
-	}
-	s:STATE_VASCONGADAS = {
-	    # added back some pop that were missing after state was split from STATE_VASCONGADAS, state had 1.3 million pops before split
-		region_state:CAR = {
-			create_pop = {
-				culture = basque
-				size = 544808
-			}
-			create_pop = {
-				culture = spanish
-				size = 163128
 			}
 		}
 	}
