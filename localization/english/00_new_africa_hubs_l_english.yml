@@ -11,9 +11,13 @@
     HUB_NAME_STATE_GUINEA_BISSAU_port: "Catió"
     HUB_NAME_STATE_GUINEA_BISSAU_wood: "Canchungo"
 
-    HUB_NAME_STATE_NORTH_CAMEROON_port: "Archibong"
-
     HUB_NAME_STATE_INDIAN_OCEAN_TERRITORY_mine: "Victoria"
+
+    HUB_NAME_STATE_FOUTA_DJALLON_city: "Conakry"
+    HUB_NAME_STATE_FOUTA_DJALLON_farm: "Kindia"
+    HUB_NAME_STATE_FOUTA_DJALLON_mine: "Sangredi"
+    HUB_NAME_STATE_FOUTA_DJALLON_port: "Kamsar"
+    HUB_NAME_STATE_FOUTA_DJALLON_wood: "Labé"
 
   #West Africa - Replaced Names
     HUB_NAME_STATE_WINDWARD_COAST_city: "Yamoussoukro"
@@ -45,6 +49,25 @@
     HUB_NAME_STATE_BORNU_farm: "Damaturu"
     HUB_NAME_STATE_BORNU_wood: "Biu"
 
+    HUB_NAME_STATE_GUINEA_city: "Kankan"
+    HUB_NAME_STATE_GUINEA_farm: "Siguiri"
+    HUB_NAME_STATE_GUINEA_mine: "Mandiana"
+    HUB_NAME_STATE_GUINEA_wood: "Dabola"
+
+    HUB_NAME_STATE_LIBERIA_city: "Monrovia"
+    HUB_NAME_STATE_LIBERIA_mine: "Harper"
+    HUB_NAME_STATE_LIBERIA_port: "Buchanan"
+    HUB_NAME_STATE_LIBERIA_wood: "Kakata"
+
+    HUB_NAME_STATE_SIERRA_LEONE_city: "Freetown"
+    HUB_NAME_STATE_SIERRA_LEONE_farm: "Bo"
+    HUB_NAME_STATE_SIERRA_LEONE_port: "Bonthe"
+    HUB_NAME_STATE_SIERRA_LEONE_wood: "Makeni"
+
+    HUB_NAME_STATE_TOGO_city: "Lomé"
+    HUB_NAME_STATE_TOGO_port: "Aného"
+    HUB_NAME_STATE_TOGO_farm: "Sokodé"
+
   # Southern Africa
     HUB_NAME_STATE_EAST_ANGOLA_city: "Luena"
     HUB_NAME_STATE_EAST_ANGOLA_farm: "Menongue"
@@ -71,8 +94,17 @@
     HUB_NAME_STATE_RUANDA_URUNDI_mine: "Gitega"
     HUB_NAME_STATE_RUANDA_URUNDI_wood: "Gisyeni"
 
+    HUB_NAME_STATE_CONGO_ORIENTALE_mine: "Bunia"
+
     HUB_NAME_STATE_TANGANYIKA_city: "Tabora"
     HUB_NAME_STATE_TANGANYIKA_mine: "Katubuka"
+
+    HUB_NAME_STATE_NORTH_CAMEROON_city: "Bafoussam"
+    HUB_NAME_STATE_NORTH_CAMEROON_farm: "Ngaoundéré"
+    HUB_NAME_STATE_NORTH_CAMEROON_port: "Archibong"
+    HUB_NAME_STATE_NORTH_CAMEROON_wood: "Garoua"
+
+    HUB_NAME_STATE_SOUTH_CAMEROON_city: "Yaoundé"
 
   # Northeast Africa
     HUB_NAME_STATE_SOMALILAND_port: "Basaso"
@@ -97,3 +129,7 @@
     HUB_NAME_STATE_GAMBELA_wood: "Jinka"
 
     HUB_NAME_STATE_GONDER_wood: "Lalibela"
+
+  # Northwest Africa
+    HUB_NAME_STATE_MAURITANIA_city: "Nouakchott"
+    HUB_NAME_STATE_MAURITANIA_port: "Nouadhibou"

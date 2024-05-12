@@ -23,3 +23,7 @@
     HUB_NAME_STATE_RIO_GRANDE_mine: "Ciudad Mante"
 
     HUB_NAME_STATE_JALISCO_mine: "Lagos de Moreno"
+
+    HUB_NAME_STATE_BAJA_CALIFORNIA_city: "Tijuana"
+    HUB_NAME_STATE_BAJA_CALIFORNIA_farm: "Mexicali"
+    HUB_NAME_STATE_BAJA_CALIFORNIA_mine: "La Paz"
