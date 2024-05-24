@@ -13,11 +13,13 @@
   HUB_NAME_STATE_NATAL_mine: "Bergville"
   HUB_NAME_STATE_NATAL_farm: "Margate"
   HUB_NAME_STATE_NATAL_wood: "Ladysmith"
+
   #West Europe
   HUB_NAME_STATE_LUXEMBOURG_city: "Luxembourg"
   HUB_NAME_STATE_LUXEMBOURG_mine: "Esch-sur-Alzette"
   HUB_NAME_STATE_LUXEMBOURG_farm: "Diekirch"
   HUB_NAME_STATE_LUXEMBOURG_wood: "Wiltz"
+  HUB_NAME_STATE_ALAND_wood: "Finström"
 
   #Spain
   HUB_NAME_STATE_MURCIA_city: "Murcia"
@@ -26,13 +28,15 @@
   HUB_NAME_STATE_MURCIA_wood: "Caravaca"
   HUB_NAME_STATE_MURCIA_port: "Cartagena"
   HUB_NAME_STATE_CASTILLA_LA_VIEJA_city: "Burgos"
-  HUB_NAME_STATE_CASTILLA_LA_VIEJA_mine: "Logroño"
+  HUB_NAME_STATE_CASTILLA_LA_VIEJA_mine: "Soria"
   HUB_NAME_STATE_CASTILLA_LA_VIEJA_farm: "Valladolid"
   HUB_NAME_STATE_CASTILLA_LA_VIEJA_wood: "Aguilar de Campoo"
   HUB_NAME_STATE_CASTILLA_LA_VIEJA_port: "Santander"
-  HUB_NAME_STATE_VASCONGADAS_city: "Vitoria"
-  HUB_NAME_STATE_VASCONGADAS_port: "Bilbao"
-  HUB_NAME_STATE_VASCONGADAS_farm: "San Sebastián"
+  # HUB_NAME_STATE_VASCONGADAS_city: "Bilbao"
+  # HUB_NAME_STATE_VASCONGADAS_farm: "Vitoria-Gasteiz"
+  # HUB_NAME_STATE_VASCONGADAS_mine: "Zarautz"
+  # HUB_NAME_STATE_VASCONGADAS_port: "San Sebastián"
+  # HUB_NAME_STATE_VASCONGADAS_wood: "Durango"
   HUB_NAME_STATE_LEON_city: "Leon"
   HUB_NAME_STATE_LEON_mine: "Ponferrada"
   HUB_NAME_STATE_LEON_farm: "Zamora"
@@ -46,8 +50,8 @@
   HUB_NAME_STATE_CASTILLA_LA_NUEVA_farm: "Toledo"
   HUB_NAME_STATE_CASTILLA_LA_NUEVA_wood: "Cuenca"
 
+
   #Russia
-  
   HUB_NAME_STATE_NORTH_ESTONIA_city: "Tallinn"
   HUB_NAME_STATE_NORTH_ESTONIA_mine: "Rapla"
   HUB_NAME_STATE_NORTH_ESTONIA_farm: "Rakvere"
@@ -197,7 +201,6 @@
   HUB_NAME_STATE_KOMI_wood: "Mikun"
   
   #Poland
-  
   HUB_NAME_STATE_AUGUSTOW_city: "Augustów"
   HUB_NAME_STATE_AUGUSTOW_mine: "Suwalki"
   HUB_NAME_STATE_AUGUSTOW_farm: "Marijampole"
@@ -211,12 +214,12 @@
   HUB_NAME_STATE_LUBLIN_farm: "Siedlce"
   HUB_NAME_STATE_LUBLIN_wood: "Chelm"
   HUB_NAME_STATE_RADOM_city: "Radom"
-  HUB_NAME_STATE_RADOM_mine: "Konskie"
+  HUB_NAME_STATE_RADOM_mine: "Końskie"
   HUB_NAME_STATE_RADOM_farm: "Kielce"
   HUB_NAME_STATE_RADOM_wood: "Opoczno"
   HUB_NAME_STATE_WARSAW_city: "Warsaw"
   HUB_NAME_STATE_WARSAW_mine: "Czestochowa"
-  HUB_NAME_STATE_WARSAW_farm: "Lodz"
+  HUB_NAME_STATE_WARSAW_farm: "Łódź"
   HUB_NAME_STATE_WARSAW_wood: "Kalisz"
   
   #Old France, Restored
@@ -280,9 +283,46 @@
   
   HUB_NAME_STATE_BUKOVINA_city:0 "Suceava"
   
-  HUB_NAME_STATE_GAMBELA_city:0 "Kersa Dek"
-  HUB_NAME_STATE_GAMBELA_farm:0 "Yabelo"
-  
-  HUB_NAME_STATE_NORTH_SOMALILAND_port:0 "Lughaya"
-  HUB_NAME_STATE_NORTH_SOMALILAND_farm:0 "Ceerigaabo"
-  HUB_NAME_STATE_NORTH_SOMALILAND_city:0 "Hargeisa"
+  #West Africa
+    HUB_NAME_STATE_UPPER_COAST_city: "Korhogo"
+    HUB_NAME_STATE_UPPER_COAST_farm: "Bondoukou"
+    HUB_NAME_STATE_UPPER_COAST_mine: "Odienne"
+    HUB_NAME_STATE_UPPER_COAST_wood: "Ferkessédougou"
+
+    HUB_NAME_STATE_GUINEA_BISSAU_city: "Bissau"
+    HUB_NAME_STATE_GUINEA_BISSAU_farm: "Bafatá"
+    HUB_NAME_STATE_GUINEA_BISSAU_mine: "Gabu"
+    HUB_NAME_STATE_GUINEA_BISSAU_port: "Catió"
+    HUB_NAME_STATE_GUINEA_BISSAU_wood: "Canchungo"
+
+    HUB_NAME_STATE_FOUTA_DJALLON_city: "Conakry"
+    HUB_NAME_STATE_FOUTA_DJALLON_farm: "Kindia"
+    HUB_NAME_STATE_FOUTA_DJALLON_mine: "Sangredi"
+    HUB_NAME_STATE_FOUTA_DJALLON_port: "Kamsar"
+    HUB_NAME_STATE_FOUTA_DJALLON_wood: "Labé"
+
+  #East Africa
+    HUB_NAME_STATE_KIVU_city: "Bukavu"
+    HUB_NAME_STATE_KIVU_farm: "Goma"
+    HUB_NAME_STATE_KIVU_mine: "Walikale"
+    HUB_NAME_STATE_KIVU_wood: "Butembo"
+
+    HUB_NAME_STATE_RUANDA_URUNDI_city: "Kigali"
+    HUB_NAME_STATE_RUANDA_URUNDI_farm: "Bujumbura"
+    HUB_NAME_STATE_RUANDA_URUNDI_mine: "Gitega"
+    HUB_NAME_STATE_RUANDA_URUNDI_wood: "Gisyeni"
+
+    HUB_NAME_STATE_GAMBELA_city: "Arba Minch"
+    HUB_NAME_STATE_GAMBELA_farm: "Yabelo"
+    HUB_NAME_STATE_GAMBELA_mine: "Gambela"
+    HUB_NAME_STATE_GAMBELA_wood: "Jinka"
+
+    HUB_NAME_STATE_NORTH_SOMALILAND_port: "Djibouti"
+    HUB_NAME_STATE_NORTH_SOMALILAND_farm:0 "Ceerigaabo"
+    HUB_NAME_STATE_NORTH_SOMALILAND_city:0 "Hargeisa"
+
+  #Southern Africa
+    HUB_NAME_STATE_NYASALAND_city: "Lilongwe"
+    HUB_NAME_STATE_NYASALAND_farm: "Blantyre"
+    HUB_NAME_STATE_NYASALAND_mine: "Mzuzu"
+    HUB_NAME_STATE_NYASALAND_wood: "Mchinji"

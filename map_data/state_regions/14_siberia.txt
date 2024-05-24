@@ -92,6 +92,7 @@ STATE_UPPER_YENISEYSK = {
         bg_logging = 29
         bg_fishing = 6
     }
+    naval_exit_id = 3043
 }
 
 STATE_OB = {
@@ -101,6 +102,7 @@ STATE_OB = {
     impassable = {}
     traits = { "state_trait_tundra" "state_trait_ob_river" }
     city = "x299E9B"
+    port = "xEA45EE"
     farm = "x1FDDBA"
     mine = "xFB9EA1"
     wood = "x620328"
@@ -115,6 +117,7 @@ STATE_OB = {
         type = "bg_oil_extraction"
         undiscovered_amount = 60
     }
+    naval_exit_id = 3043
 }
 
 STATE_NENETSIA = {
@@ -126,6 +129,7 @@ STATE_NENETSIA = {
     city = "x7CF5A8"
     farm = "xCA1B89"
     mine = "xC5167F"
+    port = "xA8DA11"
     wood = "x77E69D"
     arable_land = 20
     arable_resources = { "bg_livestock_ranches" }
@@ -137,6 +141,7 @@ STATE_NENETSIA = {
         type = "bg_oil_extraction"
         undiscovered_amount = 30
     }
+    naval_exit_id = 3039
 }
 
 STATE_CHUKOTKA = {

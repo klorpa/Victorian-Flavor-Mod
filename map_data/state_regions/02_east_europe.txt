@@ -1286,7 +1286,7 @@ STATE_ORENBURG = {
     wood = "xC158DC"
     arable_land = 40
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
-	capped_resources = {
+    capped_resources = {
         bg_iron_mining = 25
         bg_logging = 11
     }
