@@ -82,7 +82,7 @@ national_anthem_modifier = {
 drainage_roads_cheaper_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	state_infrastructure_add = 5
-	country_decree_cost_mult = -0.25
+	state_decree_cost_mult = -0.25
 }
 
 drainage_roads_cheaper_modifier_costs = {
@@ -93,7 +93,7 @@ drainage_roads_cheaper_modifier_costs = {
 drainage_roads_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	state_infrastructure_add = 5
-	country_decree_cost_mult = -0.25
+	state_decree_cost_mult = -0.25
 }
 
 drainage_roads_modifier_costs = {
@@ -103,7 +103,7 @@ drainage_roads_modifier_costs = {
 
 cheaper_roads_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	country_decree_cost_mult = -0.15
+	state_decree_cost_mult = -0.15
 }
 
 cheaper_roads_modifier_costs = {
@@ -113,7 +113,7 @@ cheaper_roads_modifier_costs = {
 
 risky_road_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	country_decree_cost_mult = -0.4
+	state_decree_cost_mult = -0.4
 }
 
 risky_road_modifier_costs = {

@@ -1041,6 +1041,17 @@
 				state_region = s:STATE_LANCASHIRE
 				count = 3
 			}
+			save_scope_as = home_army_army
+		}
+
+		create_character = {
+			# John Colborne, 1st Baron Seaton
+			template = GBR_john_colborne
+			save_scope_as = colborne_gen
+		}
+
+		scope:colborne_gen = {
+			transfer_to_formation = scope:home_army_army
 		}
 
 		create_military_formation = {
@@ -1065,6 +1076,16 @@
 				state_region = s:STATE_YORKSHIRE
 				count = 1
 			}
+			save_scope_as = army_med_army
+		}
+
+		create_character = {
+			template = GBR_matthew_whitworth_aylmer
+			save_scope_as = aylmer_gen
+		}
+
+		scope:aylmer_gen = {
+			transfer_to_formation = scope:army_med_army
 		}
 
 		create_military_formation = {
@@ -1089,6 +1110,16 @@
 				state_region = s:STATE_LANCASHIRE
 				count = 4
 			}
+			save_scope_as = west_indies_army
+		}
+
+		create_character = {
+			template = GBR_henry_hardinge
+			save_scope_as = hardinge_gen
+		}
+
+		scope:hardinge_gen = {
+			transfer_to_formation = scope:west_indies_army
 		}
 
 		create_military_formation = {
@@ -1179,6 +1210,16 @@
 				state_region = s:STATE_HOME_COUNTIES
 				count = 1
 			}
+			save_scope_as = army_india_army
+		}
+
+		create_character = {
+			template = GBR_hugh_gough
+			save_scope_as = gough_gen
+		}
+
+		scope:gough_gen = {
+			transfer_to_formation = scope:army_india_army
 		}
 
 		create_military_formation = {
@@ -1285,23 +1326,13 @@
 		}
 
 		create_character = { # Sea
-			is_admiral = yes
-			first_name = Thomas
-			last_name = Cochrane
-			historical = yes
-			hq = region_south_italy
-			age = 61
-			traits = {
-				reckless
-				expert_naval_commander
-				expert_convoy_raider
-			}
+			template = GBR_thomas_cochrane
 			save_scope_as = thomas_adm
 		}
 
 		scope:thomas_adm = {
 			transfer_to_formation = scope:med_fleet_gbr
-		}
+		}	
 
 		create_military_formation = {
 			type = fleet
@@ -1330,19 +1361,12 @@
 		}
 
 		create_character = { # Sea
-			is_admiral = yes
-			first_name = James
-			last_name = Dundas
-			historical = yes
-			age = 51
-			hq = region_iberia
-			traits = {
-				cautious
-			}
-			save_scope_as = james_adm
+			template = GBR_george_cockburn
+			save_scope_as = cockburn_adm
+			# Burnt down washington
 		}
 
-		scope:james_adm = {
+		scope:cockburn_adm = {
 			transfer_to_formation = scope:north_amer_fleet
 		}
 
@@ -1396,17 +1420,8 @@
 		}
 
 		create_character = { # Sea
-			is_admiral = yes
-			first_name = Sir_George
-			last_name = Cockburn
-			historical = yes
-			age = 64
-			hq = region_new_england
-			traits = {
-				innovative
-			}
-			save_scope_as = cockburn_adm
-			# Burnt down washington
+			template = GBR_james_dundas
+			save_scope_as = james_adm
 		}
 
 		scope:cockburn_adm = {
