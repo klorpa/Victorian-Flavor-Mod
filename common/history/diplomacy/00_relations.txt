@@ -343,4 +343,16 @@
 		set_relations = { country = c:CON value = 40 }
 		set_relations = { country = c:FRA value = -50 }
 	}
+	
+	c:KAB ?= {
+		set_relations = { country = c:GBR value = -20 }
+		set_relations = { country = c:BIC value = -20 }
+		set_relations = { country = c:RUS value = 20 }
+		set_relations = { country = c:HER value = -10 }
+		set_relations = { country = c:KAN value = -20 }
+	}
+	c:KAN ?= {
+		set_relations = { country = c:RUS value = 10 }
+		set_relations = { country = c:HER value = -20 }
+	}
 }
