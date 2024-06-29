@@ -105,9 +105,9 @@
 			save_scope_as = ii_armee
 		}
 
-		ruler = { #Friedrich Wilhelm, comment out if he is no longer a general
-			transfer_to_formation = scope:ii_armee
-		}
+		#ruler = { #Friedrich Wilhelm, comment out if he is no longer a general
+		#	transfer_to_formation = scope:ii_armee
+		#}
 
 		create_military_formation = {
 			type = army
@@ -421,7 +421,7 @@
 			
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CARPATHIAN_RUTHENIA
+				state_region = s:STATE_NORTHERN_TRANSYLVANIA
 				count = 3
 			}
 
@@ -1044,15 +1044,15 @@
 			save_scope_as = home_army_army
 		}
 
-		create_character = {
-			# John Colborne, 1st Baron Seaton
-			template = GBR_john_colborne
-			save_scope_as = colborne_gen
-		}
+		#create_character = {
+		#	# John Colborne, 1st Baron Seaton
+		#	template = GBR_john_colborne
+		#	save_scope_as = colborne_gen
+		#}
 
-		scope:colborne_gen = {
-			transfer_to_formation = scope:home_army_army
-		}
+		#scope:colborne_gen = {
+		#	transfer_to_formation = scope:home_army_army
+		#}
 
 		create_military_formation = {
 			type = army
@@ -1933,7 +1933,7 @@
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_poland
+			hq_region = sr:region_belarus
 			name = 5y_Pekhotniy_Korpus
 
 			combat_unit = { # Brest and Bialystok Infantry

@@ -585,7 +585,7 @@ STATE_LEON = {
 }
 
 STATE_MURCIA = {
-    id = 2002
+    id = 2064
     subsistence_building = "building_subsistence_farms"
     provinces = { x134657 x626878 x6549AD x71158B xA03040 xB03776 xE0BED4 }
     traits = { "state_medeteranean_climate" }

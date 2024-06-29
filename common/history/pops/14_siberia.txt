@@ -302,7 +302,7 @@
 		}
 	}
 	s:STATE_OUTER_MANCHURIA = { #DONE
-		region_state:CHI = {
+		region_state:MCH = {
 			create_pop = {
 				culture = siberian
 				size = 67800

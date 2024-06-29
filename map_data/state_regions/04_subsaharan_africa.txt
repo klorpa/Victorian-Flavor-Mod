@@ -1337,7 +1337,7 @@ STATE_HEREROLAND = {
 }
 
 STATE_BASUTOLAND = {
-    id = 800
+    id = 2063
     subsistence_building = "building_subsistence_farms"
     provinces = { "x3B4B19" "x6DB7E8" "x8C39B6" "xB6892A" "xD121F1" "xE1EAA4" "xF06050" }
     traits = { "state_trait_malaria" }
@@ -1355,7 +1355,7 @@ STATE_BASUTOLAND = {
 }
 
 STATE_NATAL = {
-    id = 801
+    id = 2062
     subsistence_building = "building_subsistence_farms"
     provinces = { "x11A090" "x279045" "x3CED3D" "x552449" "x5B124F" "x7ACC38" "x85695F" "xB1F868" "xBBCA32" "xDE0EDE" "xE0EB02" "xFF0EF1" }
     traits = { "state_trait_malaria" }

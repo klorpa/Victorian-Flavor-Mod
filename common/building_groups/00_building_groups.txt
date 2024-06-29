@@ -571,7 +571,6 @@ bg_urban_facilities = {
 	economy_of_scale_ai_factor = 2.0
 	foreign_investment_ai_factor = 0.25
 }
-}
 
 bg_arts = {
 	parent_group = bg_urban_facilities

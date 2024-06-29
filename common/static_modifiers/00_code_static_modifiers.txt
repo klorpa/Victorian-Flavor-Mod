@@ -619,6 +619,12 @@ state_turmoil_extreme = {
 	state_migration_pull_mult = -0.6
 }
 
+# Scales by the amount of debt owed to government owned buildings (ie; government self owned debt)
+government_owned_debt = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_government_dividends_waste_add = 1
+}
+
 # Scales with country GDP / COUNTRY_GDP_MODIFIER_DIVISOR
 # Capped at COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER
 country_gdp = {
