@@ -160,7 +160,7 @@ ai_strategy_plantation_economy = {
 			country_is_in_middle_east = yes	
 		}
 		# KAI: Nowhere to export
-		NOT = { modifier:market_disallow_trade_routes = yes }
+		NOT = { modifier:market_disallow_trade_routes_bool = yes }
 	}
 	
 	weight = {

@@ -71,7 +71,7 @@
 				add_ownership={
 					country={
 						country="c:UBD"
-						levels=3
+						levels=2
 					}
 				}
 				reserves=1
@@ -125,7 +125,7 @@
 				add_ownership={
 					country={
 						country="c:UBD"
-						levels=3
+						levels=2
 					}
 				}
 				reserves=1
@@ -465,17 +465,6 @@
 				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building={
-				building="building_artillery_foundries"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
-			}
-			create_building={
 				building="building_iron_mine"
 				add_ownership={
 					building={
@@ -523,7 +512,7 @@
 				add_ownership={
 					country={
 						country="c:RUS"
-						levels=10
+						levels=7
 					}
 				}
 				reserves=1
@@ -785,11 +774,35 @@
 				add_ownership={
 					country={
 						country="c:RUS"
-						levels=5
+						levels=7
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_construction_sector"
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_wooden_buildings" }
+			}
+			create_building={
+				building="building_arts_academy"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:RUS"
+						levels=1
+						region="STATE_KIEV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_traditional_art" }
 			}
 			create_building={
 				building="building_food_industry"
@@ -823,13 +836,13 @@
 					building={
 						type="building_manor_house"
 						country="c:RUS"
-						levels=22
+						levels=18
 						region="STATE_KIEV"
 					}
 					building={
 						type="building_manor_house"
 						country="c:RUS"
-						levels=8
+						levels=6
 						region="STATE_INGRIA"
 					}
 				}
@@ -859,6 +872,17 @@
 	}
 	s:STATE_ORYOL={
 		region_state:RUS={
+		    create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
@@ -957,6 +981,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_bakery" "pm_disabled_canning"  "pm_manual_dough_processing" "pm_disabled_distillery" }
+			}
+			create_building={
+				building="building_construction_sector"
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_wooden_buildings" }
 			}
 			create_building={
 				building="building_rye_farm"
@@ -1179,6 +1214,17 @@
 				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled"  }
 			}
 			create_building={
+				building="building_construction_sector"
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_wooden_buildings" }
+			}
+			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
@@ -1201,19 +1247,32 @@
 	}
 	s:STATE_TVER={
 		region_state:RUS={
+		    create_building={
+				building="building_paper_mills"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:RUS"
+						levels=1
+						region="STATE_MOSCOW"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled" "pm_merchant_guilds_building_paper_mills" }
+			}
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
 						type="building_logging_camp"
 						country="c:RUS"
-						levels=7
+						levels=3
 						region="STATE_TVER"
 					}
 					building={
 						type="building_financial_district"
 						country="c:RUS"
-						levels=3
+						levels=2
 						region="STATE_MOSCOW"
 					}
 				}
@@ -1224,13 +1283,24 @@
 	}
 	s:STATE_CHERSON={
 		region_state:RUS={
+		    create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
 			create_building={
 				building="building_shipyards"
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:RUS"
-						levels=4
+						levels=3
 						region="STATE_KIEV"
 					}
 				}
@@ -1247,6 +1317,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_military_shipbuilding_wooden"  }
+			}
+			create_building={
+				building="building_construction_sector"
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_wooden_buildings" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -1308,7 +1389,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:RUS"
-						levels=2
+						levels=3
 						region="STATE_GALICH"
 					}
 				}
@@ -1324,11 +1405,22 @@
 				add_ownership={
 					country={
 						country="c:RUS"
-						levels=2
+						levels=4
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_construction_sector"
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_wooden_buildings" }
 			}
 			create_building={
 				building="building_furniture_manufacturies"
@@ -1349,8 +1441,14 @@
 					building={
 						type="building_textile_mills"
 						country="c:RUS"
-						levels=1
+						levels=2
 						region="STATE_MINSK"
+					}
+					building={
+						type="building_financial_district"
+						country="c:RUS"
+						levels=2
+						region="STATE_MOSCOW"
 					}
 				}
 				reserves=1
@@ -1368,7 +1466,7 @@
 					building={
 						type="building_financial_district"
 						country="c:RUS"
-						levels=2
+						levels=3
 						region="STATE_MINSK"
 					}
 				}
@@ -1381,7 +1479,7 @@
 					building={
 						type="building_manor_house"
 						country="c:RUS"
-						levels=2
+						levels=4
 						region="STATE_MINSK"
 					}
 				}
@@ -1446,6 +1544,17 @@
 	}
 	s:STATE_PERM={
 		region_state:RUS={
+		    create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
@@ -1454,6 +1563,14 @@
 						country="c:RUS"
 						levels=2
 						region="STATE_PERM"
+					}
+				}
+				add_ownership={
+					building={
+						type="building_iron_mine"
+						country="c:RUS"
+						levels=3
+						region="STATE_INGRIA"
 					}
 				}
 				reserves=1
@@ -1481,18 +1598,40 @@
 				add_ownership={
 					country={
 						country="c:RUS"
-						levels=1
+						levels=3
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			 create_building={
+				building="building_artillery_foundries"
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_construction_sector"
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_wooden_buildings" }
 			}
 			create_building={
 				building="building_arms_industry"
 				add_ownership={
 					country={
 						country="c:RUS"
-						levels=3
+						levels=4
 					}
 				}
 				reserves=1
@@ -1553,7 +1692,7 @@
 					building={
 						type="building_financial_district"
 						country="c:RUS"
-						levels=1
+						levels=2
 						region="STATE_MOSCOW"
 					}
 				}
@@ -1967,6 +2106,30 @@
 	}
 	s:STATE_PSKOV={
 		region_state:RUS={
+		    create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_textile_mills"
+				add_ownership={
+					building={
+						type="building_textile_mills"
+						country="c:RUS"
+						levels=1
+						region="STATE_INGRIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
+			}
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
@@ -1975,6 +2138,22 @@
 						country="c:RUS"
 						levels=2
 						region="STATE_PSKOV"
+					}
+				}
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:RUS"
+						levels=2
+						region="STATE_INGRIA"
+					}
+				}
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:RUS"
+						levels=2
+						region="STATE_MOSCOW"
 					}
 				}
 				reserves=1
@@ -1997,6 +2176,28 @@
 	}
 	s:STATE_YAROSLAVL={
 		region_state:RUS={
+		    create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=4
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+		    create_building={
+				building="building_arms_industry"
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" }
+			}
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
@@ -2044,6 +2245,17 @@
 	}
 	s:STATE_VYATKA={
 		region_state:RUS={
+		    create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
 			create_building={
 				building="building_logging_camp"
 				add_ownership={

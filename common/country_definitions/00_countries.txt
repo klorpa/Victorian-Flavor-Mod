@@ -253,7 +253,7 @@ NOR = {
 }
 
 SWE = {
-	color = rgb{ 52 64 173 }
+	color = { 87  130  199 }
 	
 	country_type = recognized
 

@@ -281,23 +281,27 @@
 		region_state:RUS = {
 			create_pop = {
 				culture = russian
-				size = 152455
+				size = 110000
 			}
 			create_pop = {
 				culture = buryat
-				size = 25151
+				size = 29000
 			}
 			create_pop = {
 				culture = siberian
-				size = 15298
+				size = 20000
+			}
+            create_pop = {
+				culture = manchu
+				size = 76000
 			}
 			create_pop = {
 				culture = mongol
-				size = 207
+				size = 36000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 2036
+				size = 2500
 			}
 		}
 	}
